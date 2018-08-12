@@ -1,11 +1,12 @@
 <?php
 
+/**
+ * @file
+ * Contains \Drupal\site_apikey\Controller\SiteApikeyController
+ */
+
 namespace Drupal\site_apikey\Controller;
 
-/**
-  @file
-  Contains \Drupal\site_apikey\Controller\SiteApikeyController.
- */
 use Drupal\Core\Controller\ControllerBase;
 use Drupal\node\NodeInterface;
 

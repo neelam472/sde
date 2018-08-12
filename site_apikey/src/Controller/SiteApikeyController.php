@@ -1,5 +1,10 @@
 <?php
 
+/**
+ * @file
+ * Contains \Drupal\site_apikey\Controller\SiteApikeyController
+ */
+
 namespace Drupal\site_apikey\Controller;
 
 /**

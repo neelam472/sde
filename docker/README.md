@@ -5,6 +5,7 @@ This is deploying a sample web application using docker container using docker i
 
 ## Enable docker service
 sudo systemctl start docker
+
 sudo enable enable docker
 
 ## Build the Container Yourself and Push to Docker Hub

@@ -1,0 +1,514 @@
+Forgot to grant license	-1	0
+"By default  the auth prompt is suppressed making this a rare issue  closing."	0	0
+Patch was commited on May 13 2009.	0	0
+"http://svn.apache.org/viewvc?view=rev&revision=468444  Deepal, Thanks!"	1	1
+"+1 looks good  Thanks, Mayank"	1	1
+"Damn  Chuck is scary."	-1	-1
+Git is tricky that way.	-1	-1
+Plugman seems to not honour the npm proxy in fact. That's the problem.	-1	0
+"Sorry  yes I believe this has been resolved."	-1	-1
+I don't care about code duplication here.	-1	-1
+"Yes  we need to fix it. :)"	0	1
+The tricky thing with all the stacktraces we have as of now is that they don't seem to be the cause of the issue. Something is eating all the memory and as a consequence stuff starts to go wrong in arbitrary places. We need to find whatever is eating the memory in the first place. It might be very well be releated to the security provider. Can you try to run a memory profiler and see whether you can spot what is holding all the memory?	0	0
+Sounds good.	1	1
+That is bad.	-1	-1
+"bq. guess we need to supply a tool to rename sstables files if anyone is on longer names?  We probably don't need to do anything. I don't think anyone is really using names long enough for them to it the file system limit, the goal of limiting the names is just so to prevent this from happening but there will be no other assumption that the names are short from the code.  I also don't think anything will prevent rolling upgrades, do you had something in mind?  Note: I have a long flight ahead of me so I plan to update my last patch with both those changes, as I still like the moving of all the directories handling in a dedicated class, even if we don't support both layout."	0	0
+"Yes please - pull request away  my friend!"	0	1
+The new patch uses fs.makeQualified(path) as suggested.	0	0
+"That irritated the hell out of me too  but I didn't realise it was configurable in the .launch file."	-1	-1
+sorry for your time.	-1	-1
+Committed revision 1128830 to trunk. I will now backport to 3x.	0	0
+Here is quite bad.	-1	-1
+"I just remembered one of the reasons why i didn't do this the last time i looked at it: i don't think FunctionQuery has any good unit tests in the Solr code base -- there might be some tests that use the SOlrTestHarness to trigger function queries  but they aren't really portable."	0	0
+"Marking as open  since looks like it needs some more work."	0	0
+Much obliged! Thank you! :)	1	1
+"@Marcelo I was thinking these changes:  {code} -    public static AuthResult allow(String reason, User user, Permission.Action action, byte[] table) { -      return new AuthResult(true, reason, user, action, table, null, null); +    public static AuthResult allow(String reason, User user, +        Permission.Action action, byte[] table, +        Map<byte[], ? extends Collection<?>> families) { {code}  @Andrew You think the above changes an issue?  If not I'll commit."	0	0
+"Took me a few seconds to get it  but then I realized how awesome it is.  "	1	1
+Committed. Thanks!	1	1
+"I just committed this patch. Thanks  Richard!"	1	1
+"Did you set:  struts.devMode=false struts.configuration.xml.reload=false  This did the trick for me :) "	0	1
+Please find the attached screenshot for reference	0	0
+This really sucks!	-1	-1
+"Super  I'll commit shortly -- thanks Yonik!"	1	1
+Seems to work reliably now.	0	1
+"+1  the latest patch looks good to me."	1	1
+"Thanks Pi.  I do not think there is any special tricks besides those with Linux (such as you will need ant, junit, java, svn, etc).  If you want, you can also send me your pig.jar and then I will try it out for you.  Best regards, Xu   org.apache.pig.impl.logicalLayer.parser.QueryParser.Expr(QueryParser.java:373>> )  "	1	1
+"Hi Pieter   it looks fine now ; thanks ; your mirror will be added to the list in an hour or so.  Groeten,  Henk Penning"	1	1
+"Created an attachment (id=2473) Patch to MANIFEST.MF "	0	0
+"Integrated to 0.92  0.94 and trunk.  Thanks for the patch, Chunhui.  Thanks for the review, Lars."	1	1
+"Of course  it could...  :-)  DOH!"	-1	-1
+That patch file didn't apply cleanly.  Here's a version that does.	0	0
+"Thanks a lot for the review  Todd. I've just committed this to the HDFS-3077 branch."	1	1
+"Hi Alan  I was merely commenting on the title of the JIRA  not the UDF name."	0	0
+"Oh  ok."	-1	-1
+THis is now resolved and pushed to npm as 3.0.1. Uses npm's proxy configs in lazy-load module.	0	0
+"Carl Lindberg  absolutely you are right. I was not far-sighted enough to think of that. Thank you about your point.^^ My one is not a good idea. I will try to fix it. (T.T). Thanks again. "	1	1
+"Works for me. Thank you Alexei."	1	1
+Patch looks good to me. Reuploading patch with one corrected code-comment.	1	1
+"Thanks Areek  patch looks good!"	1	1
+"Excellent work  Doğacan - thank you."	1	1
+"I rather we don't work on older versions.  If this is still an issue in 2.3.1  please submit a new patch for 2.3.1.  Thanks."	1	1
+"Committed r1185532  thanks Flavio. "	1	1
+"HADOOP-2949: - If tarball is specified, HOD no longer validates for the pkgs directory in gridservice-hdfs or mapred sections as these are not going to be used anyway."	0	-1
+patches applied revision 434193	0	0
+:)  Will have a look.	1	1
+Looks good. +1. Checking this in.	1	1
+Committed. Thanks Namit!	1	1
+Apparently this is not completely solved.	-1	0
+"Thank you Jacques for the quick commite !!  Pierre "	1	1
+"Works for me. Thank you Paulex."	1	1
+"Hi  I have re-based the patch based on the latest master branch.  Please review and let me know if any changes are required."	0	0
+"I'll be happy to edit the wiki when I get this resolved!"	0	1
+"Thanks Adrien for looking into this  nice explanation!"	1	1
+"However  the goal of the test was very good."	1	1
+Trying again.	-1	0
+I love this.	1	1
+"The eclipse ui was completly stuck  which was similiar to the other experinces."	-1	-1
+"Thanks Bilgin   it is working fine now."	1	1
+Damn !	-1	-1
+"Added missing 2 *  package.html.  Some files need to be removed (svn del): src/java/org/apache/commons/jexl/Arithmetic.java src/java/org/apache/commons/jexl/parser/JEXLNode.java (*) src/java/org/apache/commons/jexl/util/PropertyExecutor.java src/java/org/apache/commons/jexl/util/BooleanPropertyExecutor.java src/java/org/apache/commons/jexl/util/introspection/UberspectLoggable.java src/java/org/apache/commons/jexl/util/GetExecutor.java  If on windows, you really need to remove it before applying the patch otherwise it will just keep using JEXLNode.java for a class named JexlNode...  The patch does not apply cleanly especially UberspectImpl & Introspector. The ""best"" approach I've found yet is to force apply updates even if patch thinks it may have already been applied. Then, for each of them, copy/paste the '.rej' content replacing the end of the original file with the content at the proper place; a quick regexp replace with '^+ ' to get rid of these '+' and it should be ok.  I wish I had a way to generate patches guaranteed to apply (a tool that would apply the patch to the original file & if rejects are found, re-create a patch for this file that replaces the whole content - delete all original content, add all new content - with the new one....)"	0	0
+Attaching a patch that adds javadoc in the FileSystem class.	0	0
+"+1  branch-2 patch looks good to me.  I'll commit this to branch-2 later today to give others a chance to comment."	1	1
+Bad IE.	-1	-1
++1. The patch looks good.	1	1
+Sounds good Claudio.	1	1
+"No  I never see the ""Completed rebuilding index"" message. Here's what I see on startup:  INFO  2011-03-21 09:50:41,961 IndexManagerImpl:<init> - search enabled: true INFO  2011-03-21 09:50:41,973 IndexManagerImpl:<init> - index dir: /home/raible/roller_data/search-index INFO  2011-03-21 09:50:42,011 ReferrerQueueManagerImpl:<init> - Instantiating Referrer Queue Manager INFO  2011-03-21 09:50:42,012 ReferrerQueueManagerImpl:<init> - Asynchronous referrer processing = false INFO  2011-03-21 09:50:42,020 ThreadManagerImpl:<init> - Instantiating Thread Manager INFO  2011-03-21 09:50:42,031 WebloggerFactory:bootstrap - Roller Weblogger business tier successfully bootstrapped INFO  2011-03-21 09:50:42,031 WebloggerFactory:bootstrap -    Version: 5.0.0-RC4 INFO  2011-03-21 09:50:42,032 WebloggerFactory:bootstrap -    Revision: r1076253 INFO  2011-03-21 09:50:42,032 WebloggerImpl:initialize - Initializing Roller Weblogger business tier WARN  2011-03-21 09:50:49,462 SharedThemeFromDir:loadThemeFromDisk - Couldn't read theme [Andreas08] preview image file [sm-theme-andreas08.png] INFO  2011-03-21 09:50:49,482 ThemeManagerImpl:initialize - Loaded 7 themes from disk. INFO  2011-03-21 09:50:49,482 ThreadManagerImpl:initialize - Initializing task: ScheduledEntriesTask INFO  2011-03-21 09:50:49,944 ThreadManagerImpl:initialize - Initializing task: ResetHitCountsTask INFO  2011-03-21 09:50:49,993 ThreadManagerImpl:initialize - Initializing task: TurnoverReferersTask INFO  2011-03-21 09:50:50,049 ThreadManagerImpl:initialize - Initializing task: PingQueueTask DEBUG 2011-03-21 09:50:50,077 IndexManagerImpl:initialize - Index inconsistent: new DEBUG 2011-03-21 09:50:50,079 IndexManagerImpl:initialize - Creating index INFO  2011-03-21 09:50:50,122 IndexManagerImpl:initialize - Index was inconsistent. Rebuilding index in the background... DEBUG 2011-03-21 09:50:50,127 IndexManagerImpl:scheduleIndexOperation - Starting scheduled index operation: org.apache.roller.weblogger.business.search.operations.RebuildWebsiteIndexOperation DEBUG 2011-03-21 09:50:50,191 WriteToIndexOperation:run - Starting search index operation DEBUG 2011-03-21 09:50:50,192 RebuildWebsiteIndexOperation:doRun - Reindexining entire site INFO  2011-03-21 09:50:50,275 WebloggerImpl:initialize - Roller Weblogger business tier successfully initialized INFO  2011-03-21 09:50:50,276 RollerContext:initializeSecurityFeatures - Remember Me enabled: true INFO  2011-03-21 09:50:50,278 RollerContext:initializeSecurityFeatures - Password Encryption Algorithm set to 'SHA' INFO  2011-03-21 09:50:50,278 RollerContext:setupVelocity - Initializing Velocity INFO  2011-03-21 09:50:56,132 RequestMappingFilter:init - Request mapping filter initialized, 1 mappers configured. INFO  2011-03-21 09:50:56,157 IPBanFilter:init - INIT IPBanFilter INFO  2011-03-21 09:50:56,158 CompressionFilter:init - Compressed Output ENABLED INFO  2011-03-21 09:50:56,186 MediaResourceServlet:init - Initializing ResourceServlet INFO  2011-03-21 09:50:56,220 PageServlet:init - Initializing PageServlet INFO  2011-03-21 09:50:56,222 WeblogPageCache:<init> - {timeout=3600, enabled=true, size=400, id=cache.weblogpage} INFO  2011-03-21 09:50:56,229 CacheManager:<clinit> - Cache Manager Initialized. INFO  2011-03-21 09:50:56,230 CacheManager:<clinit> - Cache Factory = org.apache.roller.weblogger.util.cache.ExpiringLRUCacheFactoryImpl INFO  2011-03-21 09:50:56,236 SiteWideCache:<init> - {timeout=1800, enabled=true, size=50, id=cache.sitewide} INFO  2011-03-21 09:50:56,237 PageServlet:init - Referrer processing enabled = true INFO  2011-03-21 09:50:56,241 FeedServlet:init - Initializing FeedServlet INFO  2011-03-21 09:50:56,244 WeblogFeedCache:<init> - {timeout=3600, enabled=true, size=200, id=cache.weblogfeed} INFO  2011-03-21 09:50:56,246 ResourceServlet:init - Initializing ResourceServlet INFO  2011-03-21 09:50:56,249 SearchServlet:init - Initializing SearchServlet INFO  2011-03-21 09:50:56,255 CommentServlet:init - Initializing CommentServlet INFO  2011-03-21 09:50:56,297 CommentValidationManager:<init> - Configured CommentValidator: Blacklist Comment Validator / org.apache.roller.weblogger.ui.rendering.plugins.comments.BlacklistCommentValidator INFO  2011-03-21 09:50:56,299 CommentValidationManager:<init> - Configured CommentValidator: Excess Links Comment Validator / org.apache.roller.weblogger.ui.rendering.plugins.comments.ExcessLinksCommentValidator INFO  2011-03-21 09:50:56,301 CommentValidationManager:<init> - Configured CommentValidator: Excess Size Comment Validator / org.apache.roller.weblogger.ui.rendering.plugins.comments.ExcessSizeCommentValidator INFO  2011-03-21 09:50:56,301 CommentValidationManager:<init> - Configured 3 CommentValidators INFO  2011-03-21 09:50:56,302 CommentServlet:init - Comment Throttling DISABLED INFO  2011-03-21 09:50:56,309 PlanetFeedServlet:init - Initializing PlanetRssServlet INFO  2011-03-21 09:50:56,311 PlanetCache:<init> - Planet cache = {timeout=1800, enabled=true, size=10, id=cache.planet} INFO  2011-03-21 09:50:56,314 CommentValidationManager:<init> - Configured CommentValidator: Blacklist Comment Validator / org.apache.roller.weblogger.ui.rendering.plugins.comments.BlacklistCommentValidator INFO  2011-03-21 09:50:56,314 CommentValidationManager:<init> - Configured CommentValidator: Excess Links Comment Validator / org.apache.roller.weblogger.ui.rendering.plugins.comments.ExcessLinksCommentValidator INFO  2011-03-21 09:50:56,315 CommentValidationManager:<init> - Configured CommentValidator: Excess Size Comment Validator / org.apache.roller.weblogger.ui.rendering.plugins.comments.ExcessSizeCommentValidator INFO  2011-03-21 09:50:56,315 CommentValidationManager:<init> - Configured 3 CommentValidators INFO  2011-03-21 09:50:56,318 RSDServlet:init - Initializing RSDServlet INFO  2011-03-21 09:50:56,320 PreviewResourceServlet:init - Initializing PreviewResourceServlet INFO  2011-03-21 09:50:56,340 PreviewServlet:init - Initializing PreviewServlet INFO  2011-03-21 09:50:56,342 PreviewThemeImageServlet:init - Initializing PreviewThemeImageServlet INFO  2011-03-21 09:51:24,197 ContinuousWorkerThread:run - HitCountQueueProcessor Started. INFO  2011-03-21 09:50:56,342 PreviewThemeImageServlet:init - Initializing PreviewThemeImageServlet INFO  2011-03-21 09:51:24,197 ContinuousWorkerThread:run - HitCountQueueProcessor Started. INFO  2011-03-21 09:51:29,473 Blacklist:<clinit> - Initializing MT Blacklist WARN  2011-03-21 09:51:29,478 Blacklist:loadBlacklistFromFile - Couldn't find downloaded blacklist, loaded blacklist.txt from classpath instead INFO  2011-03-21 09:51:29,494 Blacklist:loadBlacklistFromFile - Number of blacklist string rules: 3102 INFO  2011-03-21 09:51:29,495 Blacklist:loadBlacklistFromFile - Number of blacklist regex rules: 15 INFO  2011-03-21 09:51:35,146 RendererManager:<clinit> - Renderer Manager Initialized. INFO  2011-03-21 09:51:35,151 RollerVelocity:<clinit> - Initializing Velocity Rendering Engine DEBUG 2011-03-21 09:51:35,940 IndexManagerImpl:executeIndexOperationNow - Executing index operation now: org.apache.roller.weblogger.business.search.operations.SearchOperation DEBUG 2011-03-21 09:51:36,324 IndexManagerImpl:executeIndexOperationNow - Executing index operation now: org.apache.roller.weblogger.business.search.operations.SearchOperation DEBUG 2011-03-21 09:53:49,889 IndexManagerImpl:executeIndexOperationNow - Executing index operation now: org.apache.roller.weblogger.business.search.operations.SearchOperation DEBUG 2011-03-21 09:53:50,561 IndexManagerImpl:executeIndexOperationNow - Executing index operation now: org.apache.roller.weblogger.business.search.operations.SearchOperation"	0	0
+Patch applied to trunk/ . Thank you!	1	1
+"For some reason  I couldn't upload the straight patch."	0	-1
+"+  looks good. Checking this in."	1	1
+Fixed in subversion repository as of r1328492	0	0
+"In fact  if you happen to know why ObserverHammerQuorumTest is failing with this latest patch  I'd love to hear."	0	1
+And the current behavior is irritating.	-1	-1
+"Committed to branch and trunk  thanks for the review Stack."	1	1
+Didn't got the time to try it yet.	-1	-1
+Especially I don't know very much about the test framework differences.	-1	-1
+"I think you should get rid of the open-ended version spec [1.2 ) as it occasionally screws things up by bringing in snapshots or non-working code. Otherwise  to my eyes  it looks good."	1	1
+Will review by EOD today. Thanks for the tip.	1	1
+That's weird.	-1	-1
+"+1  I committed this. Thanks, Hong!"	1	1
+"Hi Sandy  Thanks so much to give me such comments, that's really helpful, I will update this later."	1	1
+Thanks Andrew for covering me.	1	1
+Weird.	-1	-1
+"Sorry for the mess there  I was just trying to port CFS and Hive metastore too... but those tests don't work right now  so put it on hold  getting it to work with CQL3 Column Families is a priority for me right now  so will come back to those later.  Just for the Hive handler, please look at the (cas-support-simple-hive) branch - https://github.com/milliondreams/hive/tree/cas-support-simple-hive  All the test cases (whatever few they had) pass there and it is working perfectly with Thrift/Compact storage Column Families."	-1	-1
+ah - my bad.	-1	-1
+Duplicate of INFRA-4886	0	0
+"Gregory  thanks - the patch is applied as expected. "	1	1
+"Thanks  Myrna."	1	1
+Thanks.  I'll look into this.	1	1
+One of the error is that hiddenActivations cannot be resolved.	0	-1
+Thanks Lukas for pointing these issues out. Will review your fixes and do the necessary changes. The JMS transport fix should go to Axis2 Transports project.	1	1
+"After applying Mathias patch the sample documents works fine.  Thanks Mathias."	1	1
+"Ray  Jacoo   I finally commited it in revision: 485087.  Thanks "	1	1
+"And I think if we're going to do a sweep up of shit  we should just kill root."	-1	-1
+"Stroooong ++++++1  I wanted to do that long time, but some tests were made me afraid."	-1	-1
+Move to wish list since we won't include this in the upcoming G 2.1.5 release.	0	0
+that's nice! The patch looks good Emanuele :)	1	1
+"Looks good to me.  Mike"	1	1
+"Here is a Test case to reproduce it. I launch it on a JDK1.6 and it deadlocks each 6 to 10 run."	0	0
+"Xueqiang   I just committed your latest patch. Keep up the good work!  http://svn.apache.org/viewvc?rev=803128&view=rev"	1	1
+Fixed in HBASE-2156 after it was reopened.	0	0
+Looking forward to your patch.	1	1
+"Honestly  there is no way around this issue - of course we must discuss and come to some solution regarding Lucene/Solr at this point."	-1	-1
+Thanks Uwe!	1	1
+Committed. Thanks Hitesh!	1	1
+"This works fine.  It probably could have been done in another Valve (like the policy conetxt valve)  but this is a reasonable solution as well.  Thanks."	1	1
++1 looks good.	1	1
+Seeking back is pretty inefficient in DFS.	-1	-1
+"Created an attachment (id=293) Trivial patch that fixes this bug "	0	0
+"I have committed this.  Thanks  Junping!"	1	1
+"This new patch incorporates a few of Hairong's comments.  1. There is no need to check LOG/isInfoEnabled() because logs are typically at INFO level anyway. 2. Change the comment in addStoredBlock() on why we log when safemode is off."	0	0
+I do have a very large # of rows (>150-200MM on many nodes)	0	0
+"Bad. "	-1	-1
+Thanks for your patience.	1	1
+Thanks Ivan.	1	1
+Committed to trunk and 4x. Thanks Simon!	1	1
+"I just committed this.  Thanks  Sameer!"	1	1
+"Created an attachment (id=8392) patch "	0	0
+Committed to trunk and branch-0.4. Thanks Rohini.	1	1
+"Hi Mike   Do you know how to get the virtual machine file? The link to download from the rcmes web site is broken.  Thanks.   ----------------------------------------------------------------------------------------------------- Jinwon Kim Dept. Atmospheric and Oceanic Sciences and Joint Institute for Regional Earth System Science and Engineering University of California, Los Angeles Los Angeles, CA 90095-1565 "	1	1
+Thanks for sweet patch Erik.	1	1
+That sounds good. New patch uploaded.	1	1
+Thanks Rick for applaying the patch.	1	1
+Committed revision 1506513. Thanks Vinay.	1	1
+"Re: patch  looks fine. I'd include <optional> too  on geronimo/ant deps  as per project.xml"	1	1
+Sorry again.	-1	-1
+I think we all know it just sucks.	-1	-1
+"Created an attachment (id=16279) Patch to add percentage-dimensions and jpep quality handling (against Trunk) "	0	0
+"[~bikassaha] Thanks for the heads-up Bikas! This JIRA is not concerned with the Tez integration for Pig and is simply the abstraction in Pig to allow for alternate ExecutionEngines in Pig. But will certainly change this on the Tez integration side of stuff.  Thanks a lot [~cheolsoo] for continuing this! I think everything looks good from my end. I can certainly see why we may want to keep this on a different branch until everything is finalized. Certain things may still need more work. For example, OutputStats is not completed abstracted out, as it still has references to POStore which is a MR implementation construct. ScriptState/PPNL/JobStats may still need more abstraction (especially PPNL) and reworking to incorporate a new ExecutionEngine abstraction. I think what we have done here is the minimum foundation for an abstraction though, and it would be appropriate to put into trunk, but these are not my decisions to make.  With regard to public methods that were changed, I don't think most of them are a big deal, besides as Cheolsoo said, the PigServer throwing PigException. I never thought IOException was a good exception to throw, but I think reverting PigServer back to IOException as it is userfacing code is not a big deal. The rest of the method signature changes shouldn't be worrisome because most of them are internal to the project.  However, the change from JobStats to MRJobStats, while necessary (as each ExecutionEngine would have it's own type of JobStats it would present to the end user), could be problematic because it is userfacing code and would probably break people who were previously using JobStats. That I think is the most important thing to keep in mind. The task of making the PPNL and JobStats clearly tied to the ExecutionEngine should be thought through also."	1	1
+Sorry.	-1	-1
+"Thanks to Todd and Colin for the suggestions  this is much cleaner.  I'm still looking for pointers on where to go for my Checksum byte-wrangling (now in FSEditLogOp#getRawChecksum)."	1	1
+Just committed this to trunk and 3.4 branch. Thanks Rakesh!	1	1
+"looks fine  thank you."	1	1
+Thanks Karthik.	1	1
+Thanks for the patch Janko. I put the changes into 1.3.x and 2.0.0.	1	1
+"Done  Thanks chatra"	1	1
+Thanks  Klaus!	1	1
+I just committed this. Thanks Amareshwari!	1	1
+"Committed trunk revision: 1206033 Now backporting."	0	0
+"Oops  sorry folks. Wrong project. "	-1	-1
+"I think my first preference  would be to make this only a java 7 and up feature. The change is very clear and we can use our normal testing methods.  Meanwhile users can set their umask appropriately.  My second preference would be only  to only change permissions by default  with java 7 and higher. I think we really need to have tests for the default configuration and non-portable tests might have to be customized to different environments, which seems like a lot of effort for something that won't be used moving forward.  I am sorry I didn't chime in earlier.  Time has been quite tight recently. "	-1	-1
+"Hello Leo  The patch has been applied at revision r479576, thanks a lot for this enhancement, please verify that the problem is fully fixed as you expected."	1	1
+"Stefan   > the said method is not public since it returns *all* workspace names, regardless of user rights. please note that > the a session must only see/know about workspaces it is actually allowed to access.  I'm working on a garbage collector for the data store. The GC doesn't care about user rights, or, putting it another way, it must be able to access all workspaces. Ideally I'd like to use a SystemSession, but you can't get one outside RepositoryImpl or o.a.j.c package (i.e., getSystemSession(String) is package private, WorkspaceInfo is protected). I understand that these APIs shouldn't be public, but they're useful from within the core. In my case, for the GC. I'm very interested in using another way to walk every workspace, but this other way should guarantee that the repository won't shutdown during a walk operation. I'll check the solution Thomas said he'll be proposing, but in the mean time that is what I'm using. Still, I don't see why this APIs aren't public. Regards"	0	0
++1 Looks good to me.	1	1
+Pull it back in if you think different.	-1	-1
+"The patch looks good  just applied on the 1.1 branch and trunk. Thanks a lot  keep them coming! :)"	1	1
+Committed to TRUNK.  Thanks for the patch Doug.	1	1
+Patch commited	0	0
+"looks fine  thank you  George."	1	1
+"Hi Florent  where is the code you extracted?"	0	0
+Last try.	0	-1
+hi Dan!!	1	1
+I will figure out the details and do the port later this week if you don't get to it first.	0	-1
+Sorry - I just didn't read the issues carefull enough.	-1	-1
+This whole thing is really pretty trivial.	-1	-1
+"sorry  should be: path -p6 < pluto-1.1.0-taglib-el.diff"	-1	-1
+thanks tom....let me see if I can come up with a test case for the LineReader reset. I did forget adding a test case for that.  I probably file that as part of this patch.	1	1
+Thanks Bryan!	1	1
+"Hi Nick   Can you please re-create this patch as I can't get the code to compile?  For starters, I can't get the class AttributeImplItem to compile.  Please use the latest trunk when doing so  Thanks.  -- George"	1	1
+"Yes  updated the rb just now. Sorry  no perf numbers yet. Let me run some experiments for that. Thanks."	1	1
+Applied the patch with revision 170884.  Thanks Carlin for the detailed updates (and for all the fixed double-dashes :)).	1	1
+once per every bad disk).	-1	-1
+Weird.	-1	-1
+Sorry about the trouble.	-1	-1
+Didn't modify any testcases because its just some minor typo fixes.	0	0
+"Done at revs 946320 and 946321  thanks Blas"	1	0
+"Committed @revision 1440266 in trunk Thanks Lufeng, if and when you get around to the patch for 2.x I can review. The patches for tests are very welcome in Nutch. Thank you. "	1	1
+"Nobody has started.  If you want to submit a patch  that would be great!  Thanks! "	1	1
+"the code has been checked in. Thanks to Gordon for that. "	1	1
+Add this in once 0.20.2 clears.	0	0
+"We reported this crash to Oracle in plenty of time  and the *worse* wrong-results bug has been open since May 13: http://bugs.sun.com/bugdatabase/view_bug.do?bug_id=7044738  but Oracle decided not to fix that  too. "	0	-1
+thanks for the patch Michael Van Geertruy :)	1	1
+Changes ported to branches/2.1 in rev 656740.	0	0
+"Hi Ivan  As Donald has reassigned this JIRA to you, please help to review and commit these patches after I submit the patch for TranQL localization. Thanks. BTW, the first patch in the list had already been committed."	1	1
+"+1 This patch looks good. Let's remove from 0.4  and work on a better implementation on 0.5"	1	1
+"Sorry  my code base is a little old  looks like HADOOP-9147 add some new test in TestFileStatus. "	-1	-1
+This patch solved this issue in a test case.	0	0
+It looks good to me too.	1	1
+"If you run the train command you get an error in the model serializer  I suggest to train on the ppa data set  serialize the model and then load it again to ensure there are no runtime errors in this code path. Its also easier to debug in an IDE if it fails in a junit test.  That is the exception I get:  Caused by: java.lang.NullPointerException at opennlp.model.GenericModelWriter.persist(GenericModelWriter.java:91) at opennlp.tools.util.model.ModelUtil.writeModel(ModelUtil.java:71) at opennlp.tools.util.model.GenericModelSerializer.serialize(GenericModelSerializer.java:39) at opennlp.tools.util.model.GenericModelSerializer.serialize(GenericModelSerializer.java:31) at opennlp.tools.util.model.BaseModel.serialize(BaseModel.java:553) at opennlp.tools.cmdline.CmdLineUtil.writeModel(CmdLineUtil.java:173) at opennlp.tools.cmdline.namefind.TokenNameFinderTrainerTool.run(TokenNameFinderTrainerTool.java:193) at opennlp.tools.cmdline.CLI.main(CLI.java:222) ... 6 more "	0	0
+"Sorry  we are no longer using Xerces."	-1	-1
+Would you please try the patch? Thanks very much!	1	1
+"And debugging is hell  because the test environment needs to have the exact same loader setup."	-1	-1
+Thanks.	1	1
+"Committed to 1.3.1 branch at revision: 685854 "	0	0
+"Committed  thanks Dave"	1	1
+"Hi Leon  thanks i'll take a look. Anyway i thought of refactoring this parsing mechanism, we can do better :-).  Cheers Sascha"	1	1
+"Oleg   I agree, it does seem that the presence of the Proxy-Authorization header on the already authenticated connection causes re-authentication.  So, for NTLM to work the proxy-auth header must be removed once authenticated.  I don't think either patch 2 or 3 handles this case, unless (in the case of patch 2) the host also uses NTLM.  What we really need is a way to remove NTLM headers after the authentication has succeeded.  Mike"	0	0
+"Hi Willem   I've just tried the latest version from the trunk. Now everything works like a charm. Thank you very much for such a great help.  Regards, Sergey"	1	1
+i found the class - so there is no bug - sorry	-1	-1
+"but app developers should always explicitly set it based on their application  My guess is that a large enough group of people take the defaults that it matters."	0	-1
+"Integrated to 0.94  Thanks for the backport, Jeff.  Thanks for the review, Lars."	1	1
+Works fine. Thanks	1	1
+"The DismaxRequestHandler and StandardRequestHandler are both deprecated and replaced with SearchHandler.     "	0	0
+"Yes  for create/append"	0	0
+Damn...	-1	-1
+"Created an attachment (id=16836) struts-config "	0	0
+What the hell are you waiting for ?	-1	-1
+"bq. 1)  Sorry  didn't create a patch for the README since it was a small change  it is included in this patch with the comment revision.  "	-1	-1
+"@Matt... I'm an idiot  I used the wrong patch. Sigh."	-1	-1
+"well sorry  i didn't upload the right files"	-1	-1
+"Sorry  in rushing to commit I forgot to add author during the commit."	-1	-1
+There is no close() in FileContext.  Users are not supposed to close FileContext.	0	0
+"I just committed this. Thanks  Omer!"	1	1
+"RMAppAttemptImpl.recoverAppAttemptTokens()  Looks like all changes in RMAppImpl are unnecessary."	0	-1
++1 looks good - all tests pass.	1	1
+"Could you make sure that the following path exists on your machine:  C:\Program Files\Apache\Tomcat 6.0\webapps\ode\WEB-INF/jpadb  It sometimes happen that Tomcat, for some reason, fails to open the WAR which results in an incomplete deployment."	0	0
+1.2.x patch attached	0	0
+"It'd work but it's a halfway hack to the real fix we should do in 0.92.  My points is that I think it is a good idea in general to raise this timeout (while adding configs so you don't necessarily have to wait since smallish clusters could use the max param if they want to speed this up)... we have run into the situation where not all RS came in the 3 second window (which really is too small given heartbeat frequency) so I've already ramped up the config timeout for fb production.  But I'm fine implementing the halfway fix if my argument still doesn't win you over :)"	0	0
+I've upped the httpd timeout from 5 mins to 30. I didn't see any OutOfMemoryErrors in the logs so hopefully this will fix it. Please give it another try.	0	0
+Committed revision 585929.	0	0
+WOW....you are right...I'm deeply sorry to bother you guys (and I'm also a bit embarrassed).	-1	-1
+"Thanks for reporting  solved!"	1	1
+"Sorry Jacques  I have not seen that it was a grouped bugs. In this case I have used to set in the grouped bugs the sum of the components used by detailed issues. I didn't like unknow components. Otherwise we can add a new fictitious component - GROUPED ISSUES - and assign this component to this type of issue.  Thanks Marco "	-1	1
+Doh.	-1	-1
+"committed  thanks!"	1	1
+"Sorry  I'd accidentally deleted the --disable-eventfd from my compilation script."	-1	-1
+That's pretty unlikely.	-1	-1
+"Thanks guys. :)  I also agree with Hyunsik's suggestion. I updated hadoop dependency to follow hadoop version of 'tajo-project'.  Check the patch again. please. "	1	1
+"+1 This looks good to me. Existing configurations will still work with this patch  so there are no compatibility concerns."	1	1
+"I was in too much of a hurry  sorry hold on a sec."	-1	-1
+"Sorry typo:  ""our part"" in place of  ""one part"" above."	-1	-1
+"Created an attachment (id=7421) patch to o.a.c.l.SystemUtils.java. Modified declaration order. "	0	0
+Sorry for the mistake.	-1	-1
+"Gabe  yes, this (<param name=""blocked"">p1,p2</param> ) would be the way I would expect it to work but perhaps we can add OGNL expression evaluation as well. This could be usefull in other cases as stated in XW-340.  What do you think?"	0	0
++1 on intent from looking at what the patch fixes.	0	1
+"Committed to trunk. Thanks  Enis!"	1	1
+thanks edgar for finding this one!	1	1
+"You're results are awesome Paul. Great work :) Looking forward to see your new JSON parser in trunk whenever you think is ready."	1	1
+Thanks for the review Andrew!	1	1
+The patches look good :)	1	1
+For those of us who don't care about ivy in fact lose something - a easy to build hbase.	-1	-1
+"It sucks to lose the code readability  but it seems like a reasonable price to pay."	-1	-1
+great. awesome job sergey!	1	1
+"Hi  Ted  Matteo  Thanks for the review. The commands.rb has some existing logic that tries to 'rescue' some exceptions. It will get more and more difficult to keep it generic artificially as we evolve and add more ... The approach to expand (instead of shrink) this logic is not a bad or ugly one ...  But your suggested solution is fine.  "	1	1
+Patches are welcome!	1	1
+"Thanks a lot for the reviews  Todd."	1	1
+Looks good!	1	1
+In revision 1406185 I applied the patch from https://github.com/jukka/jackrabbit-oak/commit/e01558418008e41a94c44ea00494f6a939ed58a2. This fixes the problem.	0	0
+Damn it !	-1	-1
+Committed. Thanks a lot very much Ashish!!	1	1
+damn this was assigned to you since months.	-1	-1
+"I can access the patch deletion from ""Manage attachments"" right next to the attachment list.  If you can't access it  let me know which patches need to be deleted..."	0	0
+"Thanks for the patch Niall  +1"	1	1
+Fixed in SCA Java 1.2 rc4.	0	0
+Thank you Jing for the review.	1	1
+"Thanks  Mike!"	1	1
+"No idea about the issue resolution/if it's still active  but I'm afraid that by no stretch of the imagination can it be termed a ""Critical"" issue."	-1	-1
+"And boy  hell broke loose ;)  So... the biggest issue I'm facing is indeed with Random sharing across threads."	-1	-1
+"+1 (damn intellij  it's not like patch format hasn't been standard for years)"	-1	-1
+This bug was introduced by https://issues.apache.org/struts/browse/WW-2171	-1	0
+"Thanks for the patch Daryn   +1  I put it into trunk, branch-2, and branch-0.23"	1	1
+The patch is attached.	0	0
+I don't have resources to hand to test this at mo.	0	-1
+"Looks pretty cool. Fresh and minimalist. Love it :-) Good work."	1	1
+"sorry  unassigning myself from this backport."	-1	-1
+"if so  can you see if you can git bisect this bad boy?"	-1	-1
+"Sorry  but look at mapSubtract and further down in the source you will find plenty."	-1	-1
+This sucks *so much*...	-1	-1
+"Hi Edward  Thanks for spotting it."	1	1
+"I applied the patch  thanks!"	1	1
+Thanks Daniel. We will get back on this as soon as we have the correct information. Thank you.	1	1
+"Keep in mind this is to support ""development"" scenarios  only.  If a project in an IDE references jars in lets say a maven repo.  We need the ability to add individual entries to the shard lib  without having to copy each individual jar over to the shared library.    So the answer to your first question is no  this is not the same  there is no way to add invidivial entries.  I don't quite understand your second bullet.  Third bullet, true, just thought it would be nice to have an empty template.  Yes, agree a test case should be added.    "	0	0
+"> Have checked in this change which can be reviewed here: http://fisheye6.atlassian.com/changelog/click/?cs=766349  > Would appreciate any feedback. I just have the feeling this entire ControlRegistry is growing over our heads. Taking a look at many older applications with older Click releases, I can't stop thinking that Click was very good for years without it. I also received a few custom components for maintenance and I don't think this change (nor ControlRegistry) is of any needed in them (or maybe simply I'm not getting the entire concept).  Of course, I'm a newbie, but my impression is that most of the advantages you list are for ClickClick. Is it possible that the problem is with the ClickClick  approach(and that should be changed), not with Click?  Many parts of Click are simple to understand and nice, but this one is not. Making it even more complex, is just a guarantee that users like me will understand it even less.  From what I saw, one of the most important parts of Click is backward compatibility. For this however, Click should remain very simple, otherwise it will get big and bloated(and it can't afford ""published"" experiments). Tapestry on the other and can do this since with every new version they throw aboard the entire compatibility, so ""experiments"" if go wrong are not that a problem - and history shows that complex things always go wrong sooner or later (latest one: with T5.2 they'll trow maven away now :) )  My wish is when I look at the Click source code to be able to quickly understand what's up there - cause only so I have a good feeling when I use it  in applications (otherwise I have that ""black box feeling"" - and it's not fun ). I think like this, are most users - those who prefer complex thing have a very huge choice of concurrent frameworks :). "	0	1
+"Hello Andreas   Thank you for the information.  Shall try the same and upload the patch shortly.  Thanks & Regards, Ravikiran Mane.  "	1	1
+"+1  Looks good  I will commit this patch."	1	1
+"Hi Fuhwei   I was a bit worried by the big override method in your patch, so I have taken a good long look at this, but as its an area of the code I'm not very familiar with I can't necessarily jump in with an expert comment.  My current analysis of this is that EMF forces an assumption in the two lines of XSDEcoreBuilder's createFeature method  XSDTypeDefinition elementTypeDefinition = getEffectiveTypeDefinition(xsdComponent, xsdElementDeclaration); EClassifier eClassifier = getEClassifier(elementTypeDefinition);  that the type of an element is contained in the emf representation generated from the input schema.  So, if we could override getEffectiveTypeDefinition and conditionally return an XSDTypeDefinition from the metadata available within our SDO scope then we would be OK.  For the case where the type referenced in the schema was provided by an earlier XSD to SDO conversion I think we can retrieve this data, and then do whatever's necessary, if anything, to get the EClassifier based on that type definition (I haven't spent the time to dig into that as I thought now was a good time to discuss)  This wouldn't cover the case where a schema writer was assuming some types were available that hadn't been produced from an XSD,  but I don't know that that's currently a realistic use case.  If my analysis is correct we could lobby EMF to make a change so that the above two lines were incorporated into a single protected method call that didn't require the EClassifier lookup to proceed via an XSDTypeDefinition instance. Then our override would be able to return an EClassifier based on the xsdComponent and xsdElementDeclaration directly.  What do you think?  Have I missed a/the point here? "	0	0
+Haven't you done this N?	0	0
+"I now realize hadoop-1662 is required. So i will wait. Thanks."	1	1
+"Created an attachment (id=7238) 2nd repro. "	0	0
+"Setting it to Major  as the case seems to be random. Please comment if you disagree."	-1	0
+That's indeed odd - I didn't knowingly reformat - must have been a mishap..	-1	0
+Closing all resolved tickets from 2010 or older	0	0
+I'm an idiot.	-1	-1
+Will commit it today evening.	0	0
+I think it's time to just close this issue.	-1	-1
+"Committed to branch. Thanks  Remus!"	1	1
+"Marco  BTW I have only helped Santosh Malviya for OFBIZ-1468 where ever he needs and reviewed his work. After that Its only his effort to convert java to minilang + testing the patch. So majority of credit goes to Santosh Malviya :)"	1	1
+"Igor is an idiot  and we *do* need gmake."	-1	-1
+I just committed this to trunk and branch-2.0. Thanks Xeiguiming!	1	1
+Thanks Dawid!	1	1
+Awesome stuff Stephen!	1	1
+"Thanks  Adrian!"	1	1
+"Adds leading ""/"" to root context of default plan.  "	0	0
+"Yes I'm building MINA myself from trunk. Just to be sure  when I checkout the code from <http://svn.apache.org/repos/asf/mina/trunk> I'll get always the latest code!?  I'll see if I can some up with a little application (it may take a few days due to a lot of work I've to finish).  -Roger"	0	0
+Just some variations	-1	0
+"Thanks Anton.  Fix applied to ACCESSIBILITY module at repo revision r598652.  Please check it is fixed as you expected. "	1	1
+"I didn't do that because that seems bad in hive  so I returned ""null"" from the operation."	-1	-1
+Thanks for providing this update. WIll try to take a look at this sometime this week.	1	1
+"Thanks James  does the rest of the build work with this patch? Seems like this should work with the old RHEL5 toolchain but I didn't look closely. "	1	1
+Corrects problems with continuous replication timeouts introduced by r916518 and r916868.	0	0
+"Sorry  missed that select-box."	-1	-1
+"Thanks  Karthik!  I committed this to trunk  branch-2  and branch-2.1-beta."	1	1
+"I committed this. Thanks  Nicholas"	1	1
+"I just committed this. Thanks  Amareshwari!"	1	1
+Sorry for the delay.	-1	-1
+"I'm still not in love with the sarcasm or excessive negativity.  I'll just point a few things out.  1/ I didn't veto anything, and this has nothing to do with C++.  I think it is a bad idea for us to generate code in a way that causes semantics to silently change when a new optional field is added.  This in dangerous in the long term.  2/ I have no problem reverting this change.  3/ Restoring the old constructor and marking in deprecated is probably a good idea."	0	1
+Duplicate of CAMEL-6918	0	0
+"I think what happens is all bugs are initially internal to Oracle and they need to be ""opened up"" to the public. I presume this is so that critical bug reports don't immediately become available for exploits... but I'm just guessing."	0	0
+"Yes  I missed this basic case. Thanks for pointing out. I will cancel this patch."	1	0
+"Thanks Divesh   Your patch is commited at revision: 762863 "	1	1
+"Sorry for the late review. Have a few minor questions/comments.  60. What happens if have 2 instances of Consumers with the same clientid in the same jvm? Does one of them fail because it fails to register metrics? Ditto for Producers.  61. ConsumerTopicStats: What if a topic is named AllTopics? We use to handle this by adding a - in topic specific stats.  62. ZookeeperConsumerConnector: Do we need to validate groupid?  63. ClientId: Does the clientid length need to be different from topic length?  64. AbstractFetcherThread: When building a fetch request, do we need to pass in brokerInfo as part of the client id? BrokerInfo contains the source broker info and the fetch requests are always made to the source broker.  "	0	-1
+The biggest problem is that we've had too many committers over the years and we'd have to get all of their permission to change it.	-1	-1
+I just committed this. Thanks Samuel !!	1	1
+"Patch to allow removing the token  and throw UE instead of an internal error when trying to insert and the number of endpoints is less than the RF."	0	0
+"I just committed this. Thanks  Boris!"	1	1
+"Best regards  Richard"	1	1
+Sorry for the trouble Vikram!	-1	-1
+"Thanks a lot  Jon for signing up this."	1	1
+"Mathias  please close this issue as it is not reproducing any more...  Thanks."	1	1
+Pull it back in if you think different.	-1	-1
+"I just committed this to trunk and branch 0.20  as they are test cases and no change to functionality. Thanks  Vinod !"	1	1
+"Builds fine for me and the code looks good. Great work! I did not run the integration tests.  [~abayer] what do you think?"	1	1
+"I have committed this.  Thanks  CW!"	1	1
+"+1. Patch looks good. Thanks Jian  and Zhijie  Bikas for the reviews."	1	1
+"The state stuck at ""Allocated state""  It is a dup of 3788."	-1	-1
+"ah  right -- skipping the clear would be buggy.  +1 again. :)"	-1	1
+"Thank you  Carol!"	1	1
+I just committed this.  Thanks Giri!	1	1
+"Oh  signed shift!"	0	-1
+"I've tried patching the current SVN version of tapestry-core  but the patch did not work for me either  though no failure messages  just silently does nothing when trying to get a page (404). This is a homebrewed version of the ""quickstart"" app.  Directory structure is exploded/x.ear/x.war/WEB-INF/classes/... JBoss is set to deploy the exploded/ directory.  Packing the JAR in WEB-INF/lib works, but JBoss/Tomcat can't do reloading or hot deployment in this case, which is very annoying.  It would be nice if I could get this to work :)  Used JBoss 4.0.5"	0	1
+Committed revision 1331265.	0	0
+"Oops  sorry. Certainly right."	-1	-1
+"I won't get to it  so let's go ahead. In general  we should push things to a ""2.0.x"" version if we want to get it out in time for 2.0 GA."	0	0
+Direct link to mail item didn't work.	0	0
+"Hi Suran   The new catalogs_b.patch looks very good."	1	1
+Applied patch with thanks to Scott.	1	1
+"Mac  looks like the tests are failing (especially TestHarFileSystem)."	-1	-1
+"Looks good.  +1  pending Hudson."	1	1
+Sorry that I think I missed some discussion in the mailing list.	-1	-1
+Thanks. Moved	1	1
+"Excellent  thanks a lot!"	1	1
+"Thank you for the source code  but why don't you also attach a diff file you get by running 'svn diff'?  It will help us figure out which part is changed exactly.  Thanks in advance!  Your idea sounds very good, though. :D  "	1	1
+"Oh man ... it's a fucking precendence problem. "	-1	-1
+Thanks for the patch Greg. Applied at r1153789	1	0
+Thank you Brandon.	1	1
+"Created an attachment (id=16986) Proposed addition to Javadocs. "	0	0
+Committed. Thanks Namit.	1	1
+"Committed  thanks"	1	1
+"However  I figured it was better to get it in the public domain sooner and let the iterative process do it's work."	0	-1
+path of proposed change	0	0
+"Created an attachment (id=6644) SSL Guide (take 1) "	0	0
+Committed @revision 1340076 in trunk	0	0
+Imo all this just doesn't make sense from a pure performance aspect.	0	-1
+"when we have @RequestWrapper/@ResponseWrapper annotion  the generated WSDL contains duplicate schemas.  See test: JaxwsServiceBuilderTest.testDocLit()"	0	0
+Please let me know if you need something else.	-1	1
+This change was only applied to the 0.5.x-dev branch. It needs to be merged to trunk.	0	0
+"Igor  sorry it took me so long to get back to this."	-1	-1
+"I just committed this.  Thanks  Sanjay!"	1	1
+"I committed this change.  Thanks for reporting the issue Kazuki:  {code} Index: src/main/java/org/apache/hadoop/hbase/client/HConnectionManager.java =================================================================== --- src/main/java/org/apache/hadoop/hbase/client/HConnectionManager.java        (revision 1074909) +++ src/main/java/org/apache/hadoop/hbase/client/HConnectionManager.java        (working copy) @@ -300,7 +300,6 @@ // initialize zookeeper and master address manager this.zooKeeper = getZooKeeperWatcher(); masterAddressTracker = new MasterAddressTracker(this.zooKeeper, this); -      zooKeeper.registerListener(masterAddressTracker); masterAddressTracker.start();  this.rootRegionTracker = new RootRegionTracker(this.zooKeeper, this); {code}"	1	0
+thanks to Jakob Korherr for this patch	1	1
+I logged a new ticket HADOOP-9280 as this is critical problem for people trying to upgrade from 0.2 to 1.x	0	0
++1 patch looks good.	1	1
+S3 would be interesting	1	0
+"Jacopo   Thank you for your work! I'll test it today and let you know what I find."	1	1
+the recommendation in the wiki is bad.	-1	-1
+Is that ok for this file (b/c I have no idea how to do the svn move now ... after I've made all the changes already) :)	-1	1
+Sucks to rush a commit when an issue is under discussion.	-1	-1
+Released in ClickIDE 2.2.0.0.	0	0
+"Looks good  thanks!"	1	1
+This patch effectively reverts the HIVE-4688 change. The NPE is fixed in VectorizedRowBatch by HIVE-4758.	0	0
+"Sorry for the noise  I forgot to grant the license to previous attachment for inclusion in ASF works. Thanks"	1	-1
+"Applied to branch and TRUNK.  Thanks for the patch Ramkrishna."	1	1
+Applied.  Thanks Simon!	1	1
+"Forgot to mention:  Thanks to Alejandro and his team for pointing this one..."	1	1
+The patch & tests look good to me.	1	1
+"Thanks for taking this  patch looks good. Is this good to be committed?"	1	1
+"We got lots of votes on this issue  seems like we should take some action here! I will assign it and make sure it will be resolved rather sooner than later.  bq. Please add this feauture  to get expectations right, we are working on releasing 3.2 soon and this one should not block it. I will work towards 3.3 here"	0	0
+Sorry for that.	-1	-1
+An output connector should also have a say in what URLs it will accept.	0	-1
+I think we are very close too.	1	1
+"I opened [HADOOP-3607] to fix a wrong URL  but appart from that I don't there's still references to the old structure."	0	-1
+"Andrew  patch applied at revision r428265  thanks a lot for this enhancement  please verify that the problem is fully fixed as you expected. "	1	1
+Thank you.	1	1
+"Thanks Andrew  committed in rev."	1	1
+Stupid user error :)	-1	-1
+"Oops  it is my fault. Please defer this patch  I'll raise jira for other classes/interface as its dependance soon  sorry for inconvenience."	-1	-1
+"Sorry ;-)  "	-1	-1
+"Committed revision 1142583.  I also plan to backport the fix to the 10.8 branch."	0	0
+"Can't remember how to put the state of this issue to ""In progress""  not a big deal anyway..."	-1	0
+"Ported back to 3.x  Committed revision 991537."	0	0
+"Sorry  that should be  FileChannel inputChannel = input.getChannel(); FileChannel outputChannel = output.getChannel();  in the try block. "	-1	-1
+I commented out the assertion for this test ... it's not valid.	-1	0
+Finally closing this bug from hell.	-1	-1
+"My bad  uploaded the wrong patch."	-1	-1
+"Just changed the workflow scheme  should work now."	0	0
+same path as ZOOKEEPER-794_4.patch.txt but strip the path prefix added by Git.	0	0
+"Oops - the hivemodule.xml snippet from the previous post should read:  <implementation service-id=""tapestry.multipart.ServletMultipartDecoder""> <create-instance class=""org.apache.tapestry.multipart.MultipartDecoderImpl,sizeMax=-1"" model=""threaded"" /> </implementation>  Sorry for any potential confusion..."	-1	-1
+"Sorry  didn't look at the code until commit...  Can you test making it hash to a Long or a 8-byte ByteBuffer?"	-1	-1
+"Done  sorry for all the mess on a simple patch."	-1	-1
+Replaced J2eeContextImpl.newContext(...) to J2eeContextImpl.newModuleContext(...)	0	0
+"Great! Awesome!  thanks, Dims"	1	1
+Committed trunk and 0.92 branch.  Thanks for the patch N.	1	1
+"No noticeable performance impact with stress.py defaults  or with one column per row in periodic mode."	0	0
+add keyword [PATCH] to description.	0	0
+"Alexei  the patch has been applied as expected. You can close the issue  thanks."	1	1
+"Thanks Bryan for converting these tests.  In using the DERBY-2152 conversion tool  can you double check that it does not omit  the fail assert method after a method call in a try-catch block when the statement is expected to fail.  e.g. instead of  try { s.execute(command); } catch (SQLException e) { assertSQLState(""42502"", e); }   It should be:  try { s.execute(command); fail(""Command expected to fail"" + command); } catch (SQLException e) { assertSQLState(""42502"", e); }  "	1	1
+guys... this is so stupid...	-1	-1
+The patch went to the wrong bug.	0	-1
+"Did you mean to reference HADOOP-8562?  HADOOP-8952 was never committed  although apparently a typo during the checkin of HADOOP-8562 accidentally referenced it."	0	0
+Committed revision 1475954.	0	0
+"It may suck  but at least *I* won't be the one bringing in a dumb dependency to a logging library."	-1	-1
+"Oops  had a bad comparator in the TestCLI config."	-1	-1
+"Thanks for the patch  applied for 2.0.1/2.1"	1	1
+"Thanks Oliver  that's fixed it. "	1	1
+Committed to TRUNK.  Thanks for review Prakash.	1	1
+"Thanks René   Your patch is in trunk at r1061167, R10.04 at r1061173, R9.04 at r1061174 "	1	1
+This was very bad documented.	-1	-1
+"Hi Rustam  Finally I will not commit the IMAP-351 patch  so it will be good that you attach your patch here. Thx, Eric"	1	1
+Thanks Pat.	1	1
+Verified by Andrew.	0	0
+addressed review comments.  Thanks Vinod.	1	1
+"this patch is for /branches/2.0.2/plugins/org.apache.geronimo.st.v11.ui/src/org/apache/geronimo/st/v11/ui/sections/CommonGeneralSection.java thanks."	1	0
+Interesting that you decided not to detect the error based on finding two similarly-named operations.	0	1
+Sorry for delay. This patch is including LRU cache. But changing static class into member is not done. What should I do?	-1	-1
+I didn't have time to work on this yet ...	-1	-1
+"Please try this patch. Thanks a lot!"	1	1
+"+1  thanks Tom!"	1	1
+Sorry for the wild goose chase!	-1	-1
+Looks good.  Thanks George.	1	1
+"I created a class that extends UpdateRequestProcessor  which logs calls to each method. In the console output  you'll see that only the processAdd methods are called when using the DIH in debug mode and the user checks verbose and commit.  I've attached the SOLR configuration that can be used to replicate the issue. I'm assuming that once Lucene commits the files, the UpdateRequestProcessor.processCommit method should be called too.  *UpdateRequestProcessorTest.class*  package org.apache.solr.handler.dataimport;  import java.io.IOException; import org.apache.solr.update.AddUpdateCommand; import org.apache.solr.update.CommitUpdateCommand; import org.apache.solr.update.DeleteUpdateCommand; import org.apache.solr.update.MergeIndexesCommand; import org.apache.solr.update.RollbackUpdateCommand; import org.apache.solr.update.processor.UpdateRequestProcessor; import org.slf4j.Logger; import org.slf4j.LoggerFactory;  /** * Class used to show the interaction between the * DIH process and the UpdateRequestProcessor chain. * */ public class UpdateRequestProcessorTest extends UpdateRequestProcessor { protected static final Logger log = LoggerFactory.getLogger(UpdateRequestProcessorTest.class);  public UpdateRequestProcessorTest(UpdateRequestProcessor next) { super(next); }  public void finish() throws IOException { log.info(""finish called...""); super.finish(); }  public void processAdd(AddUpdateCommand cmd) throws IOException { log.info(""processAdd called...""); super.processAdd(cmd); }  public void processDelete(DeleteUpdateCommand cmd) throws IOException { log.info(""processDelete called...""); super.processDelete(cmd); }  public void processMergeIndexes(MergeIndexesCommand cmd) throws IOException { log.info(""processMergeIndexes called...""); super.processMergeIndexes(cmd); }  public void processRollback(RollbackUpdateCommand cmd) throws IOException { log.info(""processRollback called...""); super.processRollback(cmd); }  public void processCommit(CommitUpdateCommand cmd) throws IOException { log.info(""processCommit called...""); super.processCommit(cmd); }  }  *UpdateRequestProcessorTestFactory.class*  package org.apache.solr.handler.dataimport;  import org.apache.solr.request.SolrQueryRequest; import org.apache.solr.request.SolrQueryResponse; import org.apache.solr.update.processor.UpdateRequestProcessor; import org.apache.solr.update.processor.UpdateRequestProcessorFactory;  /** * Factory used to instantiate the UpdateRequestProcessorTest class * in the UpdateRequest processor chain. * */ public class UpdateRequestProcessorTestFactory extends UpdateRequestProcessorFactory {  public UpdateRequestProcessor getInstance( SolrQueryRequest req, SolrQueryResponse rsp, UpdateRequestProcessor next ){ return new UpdateRequestProcessorTest(next); }  }   *Console Output*  Nov 24, 2011 8:50:39 PM org.apache.solr.core.SolrCore execute INFO: [] webapp=null path=null params={start=0&event=firstSearcher&q=solr+rocks&rows=10} hits=0 status=0 QTime=74 Nov 24, 2011 8:50:39 PM org.apache.solr.core.SolrCore execute INFO: [] webapp=null path=null params={event=firstSearcher&q=static+firstSearcher+warming+query+from+solrconfig.xml} hits=85 status=0 QTime=27 Nov 24, 2011 8:50:39 PM org.apache.solr.core.QuerySenderListener newSearcher INFO: QuerySenderListener done. Nov 24, 2011 8:50:39 PM org.apache.solr.handler.component.SpellCheckComponent$SpellCheckerListener newSearcher INFO: Loading spell index for spellchecker: default Nov 24, 2011 8:50:39 PM org.apache.solr.core.SolrCore registerSearcher INFO: [] Registered new searcher Searcher@6e4eeaaf main Nov 24, 2011 8:51:32 PM org.apache.solr.core.SolrCore execute INFO: [] webapp=/solr path=/select params={command=status&qt=/solr-2914-test-case} status=0 QTime=7 Nov 24, 2011 8:51:32 PM org.apache.solr.core.SolrCore execute INFO: [] webapp=/solr path=/select params={command=show-config&qt=/solr-2914-test-case} status=0 QTime=1 Nov 24, 2011 8:51:41 PM org.apache.solr.handler.dataimport.DataImportHandler processConfiguration INFO: Processing configuration from solrconfig.xml: {config=./file-data-source-config.xml,update.processor=dih_test} Nov 24, 2011 8:51:41 PM org.apache.solr.handler.dataimport.DataImporter loadDataConfig INFO: Data Configuration loaded successfully Nov 24, 2011 8:51:41 PM org.apache.solr.handler.dataimport.DataImporter verifyWithSchema INFO: id is a required field in SolrSchema . But not found in DataConfig Nov 24, 2011 8:51:41 PM org.apache.solr.handler.dataimport.DataImporter doFullImport INFO: Starting Full Import Nov 24, 2011 8:51:41 PM org.apache.solr.handler.dataimport.SolrWriter readIndexerProperties INFO: Read solr-2914-test-case.properties Nov 24, 2011 8:51:41 PM org.apache.solr.handler.dataimport.LogTransformer transformRow INFO:       Processing C:\Projects\solr-test-cases\SOLR-2914\solr\sample-data\artcle1.txt Nov 24, 2011 8:51:41 PM org.apache.solr.handler.dataimport.UpdateRequestProcessorTest processAdd INFO: processAdd called... Nov 24, 2011 8:51:41 PM org.apache.solr.core.SolrDeletionPolicy onInit INFO: SolrDeletionPolicy.onInit: commits:num=1 commit{dir=C:\Projects\apache-solr-1.4.1\example\solr\data\index,segFN=segments_g,version=1322170573144,generation=16,filenames=[_l.fnm, _m.frq, _m.prx, _l.frq, _n.tis, _m.tis, _l.tis, _n.frq, _n.tii, _m.tii, _l.tii, _m.fnm, _n.fnm, _l.nrm, _n.nrm, _l.prx, _n.prx, _n.fdt, _n.fdx, _m.nrm, segments_g, _m.fdt, _l.fdx, _m.fdx, _l.fdt] Nov 24, 2011 8:51:41 PM org.apache.solr.core.SolrDeletionPolicy updateCommits INFO: newest commit = 1322170573144 Nov 24, 2011 8:51:41 PM org.apache.solr.handler.dataimport.LogTransformer transformRow INFO:       Processing C:\Projects\solr-test-cases\SOLR-2914\solr\sample-data\article2.txt Nov 24, 2011 8:51:41 PM org.apache.solr.handler.dataimport.UpdateRequestProcessorTest *processAdd* INFO: processAdd called... Nov 24, 2011 8:51:41 PM org.apache.solr.handler.dataimport.LogTransformer transformRow INFO:       Processing C:\Projects\solr-test-cases\SOLR-2914\solr\sample-data\article3.txt Nov 24, 2011 8:51:41 PM org.apache.solr.handler.dataimport.UpdateRequestProcessorTest *processAdd* INFO: processAdd called... Nov 24, 2011 8:51:41 PM org.apache.solr.handler.dataimport.LogTransformer transformRow INFO:       Processing C:\Projects\solr-test-cases\SOLR-2914\solr\sample-data\article4.txt Nov 24, 2011 8:51:41 PM org.apache.solr.handler.dataimport.UpdateRequestProcessorTest *processAdd* INFO: processAdd called... Nov 24, 2011 8:51:41 PM org.apache.solr.handler.dataimport.LogTransformer transformRow INFO:       Processing C:\Projects\solr-test-cases\SOLR-2914\solr\sample-data\article5.txt Nov 24, 2011 8:51:41 PM org.apache.solr.handler.dataimport.UpdateRequestProcessorTest *processAdd* INFO: processAdd called... Nov 24, 2011 8:51:41 PM org.apache.solr.handler.dataimport.DocBuilder finish INFO: Import completed successfully Nov 24, 2011 8:51:41 PM org.apache.solr.handler.dataimport.SolrWriter readIndexerProperties INFO: Read solr-2914-test-case.properties Nov 24, 2011 8:51:41 PM org.apache.solr.handler.dataimport.SolrWriter persist INFO: Wrote last indexed time to solr-2914-test-case.properties Nov 24, 2011 8:51:41 PM org.apache.solr.handler.dataimport.DocBuilder execute INFO: Time taken = 0:0:0.270 Nov 24, 2011 8:51:41 PM org.apache.solr.core.SolrCore execute INFO: [] webapp=/solr path=/select params={commit=on&start=0&dataConfig=<?xml+version%3D'1.0'?>%0d%0a+<dataConfig>%0d%0a++++<dataSource+type%3D""FileDataSource""+/>%0d%0a++++<document>%0d%0a++++++++<entity+name%3D""f""+processor %3D""FileListEntityProcessor""+baseDir%3D""C:/Projects/solr-test-cases/SOLR-2914/solr/sample-data""+fileName%3D"".*txt""+rootEntity%3D""false""+dataSource%3D""null"">%0d%0a%09%09++++<entity+processor%3D""PlainTextEntityProcessor""+name% 3D""x""+url%3D""${f.fileAbsolutePath}""+dataSource%3D""f""+transformer%3D""LogTransformer""+logTemplate%3D""++++++Processing+${f.fileAbsolutePath}""+logLevel%3D""info"">%0d%0a++++++++++++++++++<!--+copies+the+text+to+a+field+called+'tex t'+in+Solr-->%0d%0a++++++++++++++++<field+column%3D""plainText""+name%3D""text""/>%0d%0a++++++++++++</entity>%0d%0a++++++++</entity>%0d%0a++++</document>%0d%0a</dataConfig>&verbose=on&command=full-import&debug=on&qt=/solr-2914-t est-case&rows=10} status=0 QTime=291 "	0	0
+"Hi Christian I just tried to apply your patch, but I found there is no pom.xml in the camel-soap module. Can you submit it to the JIRA ? BTW did you run the test with JDK 1.5.0 ?"	0	0
+My bad...	-1	-1
+This is bad.	-1	-1
+"I can't reproduce this error.  I also can't properly navigate in your example since the UI doesn't properly work on a Nexus 4.  Tried on the Nexus 10  but your splash screen took too long."	0	0
+Brings this patch back up to trunk level.	0	0
+"Sorry  missed this."	-1	-1
+Quick fix to interchange the order of constructor arguments of ClientIdAndTopic.	0	0
+Why on earth does createLink() need a request?	-1	-1
+"This is fixed in CVS (post 1.5b5). "	0	0
+Closing all resolved tickets from 2010 or older	0	0
+Committed patch 2a to trunk with revision 784701.	0	0
+Committed. Thanks Kevin!	1	1
+"Sorry  I kind of forget about this one."	-1	-1
+"Sorry for the delay and thanks for the good work  works like a charm!"	1	-1
+"Hi Arpana     "	1	0
+We dropped check for references; we need to always compact if references.	0	0
+Excuse me for stolen assignement.	-1	-1
+"commit 8193b5fddbff65e9e747f08ad36bc0ad41015ab0 Author: Bikas Saha <bikas@apache.org> Date:   Mon May 13 17:35:57 2013 -0700  TEZ-123. Cleanup package dependencies. (bikas) "	0	0
+"Damn it  sry lost the orientation."	-1	-1
+hudson was hung just now for 7 hours in TestHRegion.  TestHRegion is unorthodox -- intentionally -- in that it doesn't use inherit from HBaseClusterTestCase so it didn't pick up the changes made w/ mhbc.patch.  Hopefully its this anomaly that was responsible for the hang.  Attaching a patch that has TestHRegion do like the rest of the hbase (and hadoop dfs) tests shutting down the filesystem first and then the dfs cluster.	0	0
+"Hi Tiago   Thanks for looking at this issue.  On visual inspection of the change, your text change looks fine. However, I can't apply the patch. You need to svn diff from the top of the tree show it shows the path staring with java/engine/...  You should reopen the issue until it has been committed.  Also, just for good measure you should run suites.All and derbyall  in case there are any canon updates needed.  Thanks  Kathey "	1	1
+My bad.	-1	-1
+I looked at our distributed pom.xml and they're pretty obscure.	0	-1
+"Apllied at revision: 545149  thanks! "	1	1
+Thanks Ivan for take a look. I'll go through and work on this weekend.	1	1
+I'd say to hell with windows minority :)	-1	-1
+"Sorry I missed the ""overwrite"" keyword."	-1	-1
+"I'm not sure what the problem is  but the behavior (at least in 0.1.4) is that the _isClosed AtomicBoolean is not being set to closed in a timely manner."	-1	-1
+"FWIW  I didn't experience the problem with Karaf commands when using Fuse ESB (based on Karaf 2.2.5)  but I did have problems with Aries Blueprint when I tried to instantiate some of our own beans as an OSGi service.  Workaround for me was to remove the Aries Proxy 0.3 bundle shipped with Fuse ESB and install Aries Proxy 0.3.1. After I did that and restarted the container, the problem was resolved for me."	0	0
+"You are right. I missed that point. I am +1  Oleg"	-1	1
+Committed to trunk. Thanks Jeff!	1	1
+Please ignore attachment (id=6938).	0	-1
+"But it was not the only issue: we also want to manage priorities between the tasks  but we need to read them to get enough information to make the right priorities. "	-1	-1
+The patch is generated against the latest trunk.	0	0
+planning to fix this.. I am planning to remember completed containers (only id) at node manager for predefined time (10min). Does that time sounds reasonable or we should make it configurable? ... I don't really think adding a new configuration parameter will be a good idea but I am open for any different approach / adding conf .. thoughts? This will have a similar implementation like YARN-62 but only difference is that YARN-62 only tracks container for a time after it starts to avoid duplicate launch..where as this tries to avoid logging errors for valid stop attempts...	0	0
+"Line 1664 (sorry  the 0.94 codeline)"	-1	-1
+"the patch looks good to me  aside from the lack of unit tests."	1	1
+Forget what I made(D8067).	-1	-1
+"Committed to trunk and 0.9 branch. Thanks  Arup!"	1	1
+Integrated into trunk and 0.96. Thanks.	1	1
+"Hi Neil  Thanks for the advice ...  > On the other hand, if you can design a handler that knows how to > make appropriate calls to the scanner's sendChars() method so that > the buffer gets flushed when a maximum buffer size is reached, then > perhaps a pluggable handler wouldn't be necessary since the default > behaviour would always work when an application has chosen to set > this limit.  The code I have, as written, does have the pluggable handler notion, since I didn't want to arbitrarily couple the XMLBuffer class implementation (or worse, it's interface) to the scanner. I didn't go so overboard as to allow multiple registered handlers, or anything like that; this seemed simple enough without being a hack.  > I'd also observe that XMLBuffer has to check to use the > infelicitously named ""insureCapacity()"" method to make sure it's > large enough  Yes, this is where I implemented the full-handler invocation. It's more or less as you describe. Once I get everything cleaned up, I'll post the patch here; you'll probably find it to be entirely unsurprising.  I think what I'll end up doing to allow user-configurable buffer size limit will be to add a setter method on Parser and AbstractDOMParser, something like setInputBufferSize(). I think that would be most consistent with the existing API. Sound ok?"	0	1
+Committed revision 771270.	0	0
+Thanks senaka for the patch.	1	1
+Who made this stupid rule?	-1	-1
+Sorry that I think I missed some discussion in the mailing list. The implementation and test and BreakIterator is attached.	-1	-1
+"Shit  my bad. The posted patch is from a completely wrong branch of my git repo - I had not realized I ran the test-patch against a branch not branch-1."	-1	-1
+"Good catch!  Thanks for the thorough explanation and suggestions.  I think it all makes sense.  Will work on a patch."	1	1
+Committed to trunk.  Thanks for patch Tudor and review Michael.	1	1
+Why not use getSystemLoadAvg() to make it portable?	0	0
+"Sorry  I see that you say the same  Mike :)"	-1	-1
+"Thanks  Andreas  I will check it "	1	1
+I don't care what we do as long as we don't change the attributes in JSP significantly.	0	-1
+Sorry - the above comes across as terse.	-1	-1
+"Vishal Kher to Benjamin  Camille  9:38 AM (54 minutes ago)  Hi Ben,  I was going to open a jira after checking with you guys.  With your solution won't we run in into the problem that Camille pointed out by marking the snapshot for lastZxid - 1? - Peer fails after taking the snapshot. The snapshot has applied lastZxid, which created a child znode. During recovery it will apply lastZxid, which will faill with NodeExists and we will increment the Cversion of the parent (after fix for ZOOKEEPER-1046). So creation of sequential znodes won't be be really sequential. This is probably acceptable, but should be clearly documented. If not, then from this bug, it looks to me that patch ZOOKEEPER-1046 was also not complete. We may need to conditionally update cversion.  I think we need a clear document of how snapshots are supposed to work and what to assume while taking snapshots and while recovering from snapshots. It will be very helpful for to verify the correctness of implementation and for future bug fixes.I will open a jira for this bug shortly and post our discussion as well.  Thanks.  -Vishal  "	0	1
+John it would be great!	1	1
+"- Mind chiming in on the rationale of the setQuota vs setSpaceQuota naming (ie the former for namespace)? - Agree w Nicholas that we should move setQuota from DFS to this admin class, let's do that in a follow on change  There's an extra ""/**"" in the setQuota  javadoc. Otherwise, +1 looks good "	1	0
+"Anton and Spark  updated patch applied at revision r447348  thanks a lot for this enhancement  please verify that the problem is fully fixed as you expected. "	1	0
+"Committed to 0.20 branch.  @Stack  any chance of some trunk love? :)  If not I will get to it later."	1	1
+Thanks Jacques :)	1	1
+patch by Dennis Byrne. Thanks a lot!	1	1
+"I just committed this.  Thanks  Raghu!"	1	1
+it belongs to faces 1.2 :)	0	1
+Looks like this broke imports into Intellij	-1	0
+Committed! Thanks Liyin!	1	1
+The v4 changes look good. Thanks	1	1
+"Tim   The fix is good. Please close this JIRA. Thanks a lot."	1	1
+"I commented out the ""jaasTest"" GBean since it seems to work fine without it.  If it's necessary then please uncomment it."	0	0
+"Committed revision 949471.  merged to branch-1.4 for 1.4.1"	0	0
+I think I'd rather have a CL option so it can still raise an error if you think (say) just one node is down but a second goes offline briefly as you run the loader.  But --skip-dead-nodes would also be reasonable.	0	0
+Awesome!	1	1
+But I'm probably not an JMX expert... ;-)	-1	1
+The patches on XERCESJ-1365 supersede the ones attached here.	0	0
++1 thanks	1	1
+Dumb user; disregard.	-1	0
+I just committed this. Thanks Vinod!	1	1
+dupe of SLING-1529	0	0
+"I've committed this to 0.94 0.95 and trunk. Thanks for the patch gautam. "	1	1
+Will still be stuck in the loop though if can't actually close regions.	-1	-1
+"[~anchela]  which improvements do you have in mind?"	0	0
+Patch committed. Thanks Jarek!	1	1
+"Well  damn."	-1	-1
+"I abbreviated the heck out of my arguments and thinking  but damn it thats what I think :)"	-1	-1
+"Patch committed to trunk Thanks Hari!"	1	1
+Thanks Martijn!	1	1
+Cheers!	1	1
+Thanks guys!	1	1

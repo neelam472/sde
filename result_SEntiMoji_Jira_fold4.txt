@@ -1,0 +1,514 @@
+"Hi Bruno   I like it, seems to work well at 1st glance  Thanks!"	1	1
+"Thanks Rahul!  I will take a look at it this evening.  Aaron"	1	1
+"+1 This patch looks reasonable to me.  Thanks  Hairong!"	1	1
+My misunderstanding.	-1	-1
+"Thanks for the patch!  http://svn.apache.org/viewvc?view=revision&revision=1361531"	1	1
+Unable to reproduce issue.	0	-1
+Which API at the thrift client you are referring?	0	-1
+"Nice try :-)  I was Mr I dont believe in magic from the very beginning."	1	1
+Attaching a patch with the typo fixed. I'm going to try that along HBASE-6550 and HBASE-6165 now.	0	0
+"Finally  it should be noted that the 'noSession' filter only prevents new sessions from being created.  It allows access to any existing session that might have been created in another part of the application by the application developer."	0	0
+"bq. I'm attaching a patch which adds a second query() method to SolrServer which takes the request method as the second argument.  Shouldn't that be specific to an HTTP server?"	0	0
+I like the elegant parser!	1	1
+"Ported to branches/2.1 in rev 630315  along with GERONIMO-3840"	0	0
+"I haven't had any time to try re-upgrading after having to back out 2.0.8  but I will be sure to let you know how it works out as soon as I get the opportunity."	0	-1
+"Richard  patch applied at revision r437600  thanks a lot for this enhancement  please verify that the problem is fully fixed as you expected. "	1	1
+"Thanks! I have not tried it yet, but it looks good to me.  "	1	1
+"bq.It handles both meta is not assigned  and it is double assigned. Yes "	0	0
++1 The patch looks good to me.	1	1
+The fknames patch looks good!	1	1
+Maybe only one of us should play lawyer and the other one play engineer.	0	-1
+"Hi Ramin   The patch looks good except I think it would be good to give import/export its own  SQLState starting with XIE instead of reusing the existing store FILE_EXISTS message.  Also it would be good to have test cases for writing the lob files.  Kathey "	1	1
+Thanks for the clarification. I will reintroduce separate data structure for LEADING/FOLLOWING notifications.	1	1
+"Oh  thank you lohit. Then should we close this issue?"	1	1
+"If you ment this  <s:div id=""t4"" showLoadingText=""false""> <s:form id=""form"" action=""AjaxTest""> <input type=textbox name=""data""> <s:submit type=""button"" theme=""ajax"" label=""Update Content"" targets=""t4"" id=""ajaxbtn""/> </s:form> </s:div>  it still doesn't post the form values in IE but works fine in FF  Thanks a lot for your quick response. I really really appreciate  -ravi      -- Ravi Mangalagiri www.bluepitch.org (My personal website. Coming soon!) 703-505-4240 (c) "	1	1
+"Wrong patch  sorry."	-1	-1
+"Hi Victor  Thanks alot for your help testing this issue!  Would be good to know if it works on Centos too.  kind regards  bob"	1	1
+Updating patch synch'ed with trunk.	0	0
+"Hi Lars. Sorry  I wasn't watching this before so I missed your work til you mentioned it on the HBase JIRA. I'll try to take a look at this this week. Feel free to grab me on IRC if you have specific questions."	-1	-1
+"Well  since you didn't respond to my request I finally did without and checked out what you did.  First of all looking at CIncludeTransformer I have to say that I don't understand why it is doing its own caching. Caching should be the concern of pipelines and sources. If you want preemptive loading of cached content this would much better be implemented as a Source wrapper. In fact we now have such a class in the scratchpad area.  One unpleasant implication of the current design is that as an unsuspecting user of this class, when you turn on caching in this transformer, the cached contents of any included cocoon:// source that identifies a caching pipeline would be cached twice! Once by the pipeline itself and once by the CIncludeTransformer.  Now concerning your patch. I don't quite understand why you retain the validity of the cached contents. The algorithm the caching pipeline uses to determine the validity of the cached contents is as follows: first it looks at the validity of the cached pipeline contents itself, then if the validity by itself indicates it needs a current validity to check against then the pipeline contructs a pipeline validity by calling the participating components' getValidity() methods. If your component now returns the same validity object that you previously returned then that does not make much sense to me.  Since I really needed this functionality myself and I didn't have enough time to discuss and refactor the CIncludeTransformer I implemented my own very basic IncludeTransformer that does exactly what I need, no more no less. I'll post it here if anyone want to use it.  I also looked at the XIncludeTransformer to see if I could implement caching in that one instead. But it seems that the XIncludeTransformer reads included content from URL objects instead of from Source objects."	0	0
+"We can't upgrade to maven-assembly-plugin 2.3 as it breaks the build on MacOS  due to https://jira.codehaus.org/browse/MASSEMBLY-588."	0	0
+This is bad.	-1	-1
+"Are there any plans to release a 2.4.1? If yes  can this fix be included?"	0	0
+"Sorry  forgot to mention it in issue description. I use commons-net-2.0.jar  i.e. version 2.0.  It's because Scott Bjerstedt wrote in VFS-264 that for his patch to work we need to use commons-net 2.0."	-1	-1
+"Also  your username was stupidly named and confusing  so I deleted it and created a new one more appropriate."	0	-1
+"Hi  I’m trying to use hive performance benchmark. I read README file and followed step by step, and finally I reached to the data generation part. Teragen has no problem, but I face a problem with htmlgen.  I configured something to my own cluster (40 VMs), and launched generateData.py, but it never finished! I launched it about 10 hours ago.. So, I modified UserVisits and Rankings in config.txt to be smaller, but it was also failed. Even it consumed very little resources when I saw 'top' information in the ubuntu.  Have you guys ever met this kinds of problems? And if you have, how did you solve this problem? Thank you so much "	1	1
+A patch for this. Thanks a lot.	1	1
+"Sorry  I thought issue (and provided patch) were about cocoon-servlet-service-impl  used by either C2.2 and C3 but only now I see that instead they are related to cocoon-servlet-service-components (C2.2 only)."	-1	-1
+Thanks Ravi.	1	1
+"All the regression tests ran cleanly with the patch. Committed revision 1126468.  Thanks for fix, Ed!"	1	1
+"cool  no worries."	1	1
+"<pctony> This has been done.  It should work just fine  I'll be doing some more work on JIRA later  and will force a re-index then  so this might look better after that. Have a look around. "	0	0
+"Sorry  you're right."	-1	-1
+Thanks Stepan.	1	1
+"* Replaced TreeMap with an Array of final 'Segment' objects ** (now very slightly faster than trunk) * Rebased for trunk * Removed the patch renaming SSTableReaderTest to SegmentedFileTest  I didn't remove the builder pattern, because the alternative seems pretty ugly (copying the segments array for every append)."	0	-1
+Are we on the good path...	1	1
+"committed  thanks!"	1	1
+"durrrh  that sucks."	-1	-1
+My bad.	-1	-1
+I have attached a patch that provides the necessary translations.	0	0
+This is always a really bad way to design software.	-1	-1
+"Attached fix patch. "	0	0
+"bq. Here's a patch for the general case  and it also adds a warning that you should set your similarity with Similarity.setDefault  especially if you omit norms.  Is there no way to remove this stupid static default and deprecate Similarity.(g|s)etDefault()? Can we not use the Similarity from IndexWriter for the case of NormsWriter?"	0	-1
+"Thank Henri and Don!  I found there are two common-validator.jar in my jboss application server env. One in %JBOSS_HOME%/server/default/lib/ and the other in the lib directory of my web application. Then I delete the latter and it works well.  Thank you so much!"	1	1
+"Yes  sorry."	-1	-1
++1 looks good to me.	1	1
+"@mahadev - I would love to help test a patch :) I'm currently using 3.3.1 + ZOOKEEPER-744 + ZOOKEEPER-790  applied in that order."	1	1
+"Ugh  well that sucks."	-1	-1
+Committed. Thanks Yongqiang	1	1
+A pleasure :>.	0	1
+"bq. Actually  DIH started as a standalone webapp inside AOL. We changed it because we didn't want to duplicate the schema in two places and also because we wanted to have it available by default in Solr installations.  Another web app means you need to procure hardware  plan capacity/failover  create firewall holes etc  Even if it were a standalone app, I would still run it on the same hardware that runs Solr, though I might run it on the secondary servers that aren't normally seeing query load.  Why would you need to have the schema in two places?  My DIH config doesn't mention any field names, because all Solr field names match the MySQL field names.  Even if they didn't, I'm not sure why it would be any different than any other SolrJ client, which doesn't need to have a copy of the schema.  bq. Talking to multiple collections was never a goal for DIH – I'm not sure what value it will bring.  I've got a sharded index; currently production is on version 3.5.0.  Full rebuilds are done with DIH because my SolrJ application can't touch it for indexing speed.  It does fine for keeping the index up to date with once-a-minute updates, but for indexing millions of documents per shard, DIH beats it handily even though it's only single-threaded.  If I could put all the DIH stuff into one central place, it might make it easier to manage.  I do intend to look at the DIH code to see how it manages to run so fast, so I can hopefully improve my own code, but I can never find the time. "	0	0
+Sorry for the spam - but which test method - can't find any related to the SnapPuller on trunk.	-1	-1
+"hmm  looks like I didn't save all java files after mass-replace of whitespace. I will attach another patch  nothing of significance will change"	0	0
+Thanks Ilya.	1	1
+"Patch v6 integrated to trunk.  Thanks for the patch, Jean-Marc.  Thanks for the review, Matteo.  @Lars: Do you want this in 0.94 as well ?"	1	1
+"Hi Brandon  Let me know if the attached patch is sufficient... It looks like the following.  Address         DC          Rack        Status State   Load            Owns    Token	0	0
+Committed branch and trunk.  Thanks for the patch Mikhail.	1	1
+Regex is your friend.	0	1
+Sorry guys	-1	-1
+My patch wouldn't compile.	0	-1
+"This indicates the Standard inetorgperson schema under the standard ou=schema. This also shows the cn=institutesinetorgperson schema which is the custom schema"	0	0
+Committed by Ted today.	0	0
+Committed. Thanks Navis	1	1
+"Hi   I just made some more (long running) tests, and found some problems in the patch I submitted. The mechanism is working, but it shrinks the caches too quickly, and it prints too much log output (log.info instead of log.debug). I will fix those problems and submit a new patch. Sorry.  Thomas"	-1	-1
+"Hi Holly  Thanks!  I have the one comment -  where is the code for InternalRecursiveBundleTracker?  I don't see it in the patch  Did I miss the source code for it?  Lin"	1	1
+"To upgrade to a recent version of Jackrabbit  see http://wiki.apache.org/jackrabbit/BackupAndMigration I'm afraid I can't say much about the risk.  "	-1	-1
+Forgot ASF grant.	-1	-1
+"I suspect it has nothing to do with the file system connector or Infinispan connectors  and is simply a (stupid) mistake in the federated join processor."	-1	-1
+"<gmcdonald>   my bad "	-1	-1
+"Hi Talat - no  this patch is for the branch_2x branch only."	0	0
+Thanks Scott. git formatted patches are fine in my opinion: lets get this fixed	1	1
++1. Just committed this to trunk and branch-0.23. Thanks Jason!	1	1
+Reopening this issue and Richard will add more information into the JIRA.	0	0
+I attached a patch to add one test for plaintext.	0	0
+"Unfortunately  we can't do that  because that is not explicit on the spec javadoc  and there is a way to do what is expected using ""targets"" property."	-1	-1
+Thanks Martina.	1	1
+"Knut and Rick  thanks for your feedbacks. I will take care of the comments posted by Knut. Rick  thanks for adding -lint directive  it will be good to see the error from the compiler."	1	1
+":)  I've renamed ComponentColorProperty to be ComponentColorElement and RelationshipAggregation to TwistieAggregation."	1	1
+"Created an attachment (id=12544) mimeInput.eml for this test case "	0	0
+"Code looks good to me  patch's been committed  thanks!  Awesome to now be able both the 0.8 and 0.9 messaging API through the same interface, this is going to save us a lot of headaches :)"	1	1
+How bad is it?	-1	-1
+"> - FOUserAgent.getStream() is cool and very easy to use (now that it's properly > documented)."	1	1
+"kevinwilfong updated the revision ""HIVE-2797 [jira] Make the IP address of a Thrift client available to HMSHandler."". Reviewers: JIRA, njain, ashutoshc  Ran updated my checkout.  REVISION DETAIL https://reviews.facebook.net/D1701  AFFECTED FILES shims/src/common/java/org/apache/hadoop/hive/thrift/TUGIContainingTransport.java metastore/src/test/org/apache/hadoop/hive/metastore/TestRemoteUGIHiveMetaStoreIpAddress.java metastore/src/test/org/apache/hadoop/hive/metastore/IpAddressListener.java metastore/src/test/org/apache/hadoop/hive/metastore/TestRemoteHiveMetaStoreIpAddress.java metastore/src/java/org/apache/hadoop/hive/metastore/TUGIBasedProcessor.java metastore/src/java/org/apache/hadoop/hive/metastore/TSetIpAddressProcessor.java metastore/src/java/org/apache/hadoop/hive/metastore/HiveMetaStore.java "	0	0
+"Thanks  Arvind"	1	1
+"+1  Thanks!"	1	1
+Sorry but this is just stupid.	-1	-1
+"I just noticed your public tweet...  bq. ""@wilhelmbierbaum True. Fuck the Avro C API."" "	0	-1
+[~brocknoland] Did this not patch?	0	0
+"Committed  thanks Jingwei."	1	1
+committed to 1.2 and trunk. thanks!	1	1
+"Awesome  works for me. LG committing. Thanks!"	1	1
+"Committed to 0.20.205.1  branch-20-security  0.23.1  and trunk.  Thanks, Dave!"	1	1
+"bq. I did hit the error while I did that but I will verify again.  Ugh.  If that's the case then maybe catch the OOM in the read, and fallback to the temp buffer read solution?"	0	0
+Seems to be a faulty mailserver setup at laguna-industries.com.	0	-1
+"Hi Carlos  This looks awesome! Lots of cool stuff."	1	1
+"thanks  nandana"	1	1
+Phabricator is being a little buggy.	-1	-1
+Patch 3 looks good to me too. Thanks for all the work.	1	1
+"My bad  this is already done."	-1	-1
+"reopening issue for a partial revert as requested by Tsuy  see http://mail-archives.apache.org/mod_mbox/incubator-clerezza-dev/201009.mbox/%3CAANLkTikODvHWEzyUzsseJ7nZWjUDFhri6qKxjBmiS9WF@mail.gmail.com%3E"	0	0
+"+1  looks good.  I'll commit once HCATALOG-239 is in."	1	1
+SnappyCodec check for Hadoop native lib is wrong.	0	-1
+"Here is a stronger/generalized version of this patch. Due to a lack to time on my part  this has not been compiled or tested  (sorry). Please test if you can David/Joachim."	-1	-1
+"Django is a fullstack framework  Click is not."	-1	-1
+"Oops  didn't mean to leave that in."	-1	-1
+"Hudson does not work well  patch has been manually tested."	0	0
+Sorry I'm wrong about #2.	-1	-1
+Hmm ... this is quite bad.	-1	-1
+"Thanks for taking care of this  Alejandro."	1	1
+"Sorry  on holiday last week and just catching up."	-1	-1
+Committed revision 1331262.	0	0
+"I just committed this.  Thanks  Sanjay!"	1	1
+"Ugh  sorry :(  Thanks!"	-1	-1
+"Holy complicated-as-shit-algorithm  Batman!  The complexity of our implementation vs the complexity of what we're actually doing is starting to worry me here."	-1	-1
+Not commited in cvs.	0	0
+"I don't see that he fixed anything for TS-2216  are you thinking of his commit for TS-1988 ? I was going to try that."	0	0
+"i don't think that any special filtering should be performed for the access control content such as e.g. rep:policy nodes. but as far as i can see  you didn't incorporate this into the patch  right?  testing for Tree#exists in the NodeDelegate looks ok to me..."	0	0
+Damn maven!	-1	-1
+Ok here is a patch that works. I was stupid enough not to see it...	-1	-1
+I don't know what just happened.	-1	-1
+"Andrey   I don't quite understand this patch.  For instance  you didn't mention bcprov above but you remove some references to it in build/make/components/extra.xml and build/make/deploy.xml and confusingly the patch doesn't remove build/make/components/extra/bcprov.xml ?  This seems a little inconsistent.  Perhaps I'm missing something. "	0	0
+Thanks for the reviews..	1	1
+This looks safe also	1	1
+"Hi Daniel  thanks in advance for your support."	1	1
+Thanks a lot Subin.	1	1
+A stupid bug in a patch that is already applied.	-1	-1
+Applied. Thanks!	1	1
+Sorry.	-1	-1
+Attached patch	0	0
+"Hi Gary  I think I have a rather nice and elegant patch for this; but if you don't mind waiting  I'd like to get some clearance from my current employer.  Thanks."	1	1
+Forgot to add that I also tried this with and without HBASE-5864	-1	-1
+"Sorry  my bad. Let me upload what I have."	-1	-1
++1 great job pat.	1	1
+"Thanks Todd  glad to be on board!"	1	1
+(@ddlatham: thats kinda funny that you wrote the linked-to article -- it was a random google search)	0	1
+"> If it's windows and it's a local filesystem URI  do the os-specific subbing.  You can't always tell whether it's a local filesystem URI.  Lots of relative paths are constructed that do not contain a scheme."	0	0
+"problem - the bit to sign the source-release is being called when the source-release isn't being built because the source-release is only built at the ""executionroot"".  "	0	-1
+Sorry.	-1	-1
+Closing all resolved tickets from 2010 or older	0	0
+":)  Best regards, Fabian."	1	1
+Thanks	1	1
+"Attaching the doc updates for the Tuning Guide. Please review and comment if these updates are ready to be committed."	0	0
+Splitting an existing sub-shard gets stuck up.	-1	-1
+"The defect  from hell 666  be scared.."	-1	-1
+"Sorry  I miss. This bug is same STR-2372. I change resolution to INVALID. "	-1	-1
+"Looks like this problem is bigger than I thought.  I can't even get a simple form without dot-stuffing to work.  Parsing this simple script:  require [""fileinto"", ""reject"", ""tag"", ""flag""];  # reply if anyof (header :contains ""subject"" ""test reply"") { reply ""text:"" This is the first line This is the second line . ; stop; }  results in  org.apache.jsieve.parser.generated.TokenMgrError: Lexical error at line 8, column 1.  Encountered: ""."" (46), after : """" at org.apache.jsieve.parser.generated.SieveParserTokenManager.getNextToken(SieveParserTokenManager.java:609) at org.apache.jsieve.parser.generated.SieveParser.getToken(SieveParser.java:625) at org.apache.jsieve.parser.generated.SieveParser.jjtreeOpenNodeScope(SieveParser.java:10) "	0	0
+I'm however very interested in this feature as it is essential to me.	1	-1
+"The problem is that it builds awt  and that requires some dependencies."	-1	-1
+"hmm... i couldn't run your huge 7.5 MB application. Sorry for asking again  but will it be possible to post a ***smaller*** test case? Actually  that will also help you to isolate the issue.  - venkat"	-1	0
+"Sorry I haven't tried you patch."	-1	-1
++1 Thanks Sambavi	1	1
+"I just committed this. Thanks for the reviews  Doug.  (BTW the last patch didn't include the removal of lang/java/mapred/src/main/java/org/apache/hadoop/io/SequenceFileBase.java, so I did that manually when I committed.)"	1	1
+"+1 This looks good to me. "	1	1
+I think its a good idea to go ahead and put a patch together so we can discuss it directly.	1	1
+"As soon as I made the change in Karaf  I will submit the CXF patch."	0	0
+This is a silly one.	-1	-1
+"I think SSTableDeletingTask is a good spot  I just wasn't sure if that would be appropriate."	-1	1
+It seems really confusing.	-1	-1
+"For quick reference.... autoPagingContent is the usage in question."	0	0
+Version 2.2.0RC3 is fine.	1	1
+"[~cmccabe]: oh  hell no!"	-1	-1
+"Ah great  thanks!    "	1	1
+Our caller may not notice what happend right now.	-1	-1
+"Thanks Amit & Vivek - Committed at r907620.  -- Ashish"	1	1
+"Sorry  I didn't look at the package thoroughly enough. I now see that it can be used in the non-RPC cases also. "	-1	-1
+Looks good.	1	1
+thanks Attila. I fixed the test/header already	1	1
+"Sorry  I forgot to change the priority of this one."	-1	-1
+Duplicate of HDFS-2321	0	0
+I think this is pretty close to being ready.	1	1
+"Yes  actually I take out the hbase part when I commit."	0	0
+"Maven  I am on the fence about it. We actually do not need all the libs I included. Having them in a tarball sounds good  but making a maven repo for only this purpose seems to be a lot of work.  {quote} Should we attempt to factor out the HBase commonality immediately, or commit the overlapping code and then do refactoring as a followup? I'm fine either way; I can give suggestions on how to create the reusable abstract bases and where to package+name them.{quote} If you can specify specific instances then sure. The code may be 99% the same, but that one nuance is going to make the abstractions confusing and useless.  I await further review."	0	0
+Committed to trunk. Thanks Tim!	1	1
+Thanks a lot for your help!	1	1
+"Merged the batch file updates to branches/2.1 (revision 743129). Thanks again! "	1	1
+"yes parseLedgerConfig did throw an IOException.  since the bug is found in hub server, topic can't be acquired due to hub server can't closing such kind ledger. if we don't add code in LedgerOpenOp, we have to find all such kind ledgers and handle them manually (maybe delete them). throwing IOException here is OK for me. but I am not sure do we need to keep backward compatibility to handle data/metadata produced by old version. what is your opinion?"	0	0
+"Hello Oliver   Sorry for the late response. I haven't had any time to look into this again, maybe it was a misuse on my side after all. Since I haven't been working on the project I encountered the behavior in for months, this issue might as well be closed."	-1	-1
+Hi. Should this be ok to commit to trunk? Thanks.	1	1
+Can anyone please review the attached patch ? Thanks	1	1
++1 patch looks good.  Thanks a lot!	1	1
+"As Olivier does all the great work here  I assigned the issue to him. Thank you!"	1	1
++1 the new patch looks good.	1	1
+"Added to trunk in #1098800 3.x in #1098896  sorry about visad.UnimplementedException!"	-1	-1
+Incomplete example.	0	-1
+Duplicate of HADOOP-3906. Plz comment there.	0	0
+"Committed  thanks!"	1	1
+"Thanks Bruno and Bilgin   You patches are in trunk revision: 691953  Great to see good cooperation at work :) "	1	1
+"Hi DIGY   I like to know a bit more about this patch:  1) what test case is it fixing? 2) how did you determine the race condition?  The changes to the ThreadClass is considerable and I'm trying to understand why this wasn't a problem in earlier versions.  Thanks.  -- George "	1	1
+"Patch looks great!  Thanks Artem.  No more mixing in of fuzzy-ness into AnalyzingSuggester.  It looks like we are doing the utf8 conversion + det twice per lookup, once in convertAutomaton and once in getFullPrefixPaths.  But, I think this is inevitable: the first conversion is on the ""straight"" automaton, for exactFirst match, and the second one is on the lev automaton, for non-exactFirst.  Really we should only do the first convertAutomaton if exactFirst is true ... but this is an optimization so we don't need to fix it now. "	1	1
+"Looks great  thanks Tinny!"	1	1
+"Strange things going on. With Google Chrome  uploading patch files corrupts the file. With MSIE it worked. Sorry for the noise. Yesterday it worked normally..."	-1	-1
+"Thanks  Ravi!"	1	1
+"Carl - Sorry I missed that though I did see it on the logs 2x  the other being this one. Fixed in this patch."	-1	-1
+Pull it back in if you think different.	-1	-1
+"Jaigak - Its nice to see another application on top of Yarn. Since its a lot of new code, could you please add some notes on the high level components and suggest some pointers on navigating the code. It will help review the changes. Thanks!"	1	1
+"Thanks  patch applied. "	1	1
+(Do nothing): Are you serious about that?	-1	-1
+fix the launch console message	0	0
+"Thanks  Willem. Sorry  I was trying to get to the wiki but it's been a busy week. "	-1	1
+"I committed this.  Thanks  Miki!"	1	1
+"Sorry  db name is TPCDB  user name TPC  pwd whatever..."	-1	-1
+" (In this particular case  Hoss clearly intended to use the no-no word as an intensifier  and not to stir shit.)"	-1	-1
+"Yes  sorry I forgot to mention this :-) But a header where this is stored would work great, and probably there should be a config item if you want it or not. "	-1	-1
+"Juhani..my bad  i was mistaken."	-1	-1
+Thanks Jukka for fixing this :) (sorry)	1	-1
+"Sorry  I missed Bill's comment.  bq. We've seen similar exceptions when loading data that contains text with the column delimiter in it, which produces shorter than expected tuples. Could that be the case here?  I don't think that's the case here.  However, I've made many silly mistakes&misunderstandings in pig before.  Let me double check."	-1	-1
+Uploaded new patch by addressing review comments from Amar.	0	0
+I committed the patch to trunk. Could you please submit a patch for the 0.16 branch. This one doesn't apply cleanly. Thanks!	1	1
+"I had no idea about fetching binary data  sorry. Is it flash?  Looks like my patch addressed all three points, failing only for handling raw bytes."	-1	-1
++1 looks good.	1	1
+This is not a major issue	-1	0
+[~apresta] thanks for the fast review.	1	1
+HOLY SHIT!	-1	-1
+this patch adds rule for hm and rs to the core-site template	0	0
+Damn...	-1	-1
+"Great  [~jhsenjaliya]."	1	1
+Duplicate of AXIS2-897	0	0
+I did not have time to do it yesterday.	-1	-1
+Thanks for moving so quickly on this guys.	1	1
+"Hi  which version do I need to apply the patch on?  "	0	0
+Thanks.	1	1
+"I've revised DateConverter to conform to java 6: changed isAlphabetic to isDigit (and reversed the ?: values) use SimpleDateFormat(""Z"") as Tilman suggested.  Also fixed some Javadoc in both DateConverter and TestDateUtil"	0	0
+"Hi Malcolm   updated for the latest check-style.  Christian"	0	0
+"Sorry about that...  http://bit.ly/12UiaS"	-1	-1
+It does not look very useful.	-1	-1
++1 with the read-ahead removal.	0	0
+Fixed in revision 903352. The change should get published in a few hours.	0	0
+"Great  I think we are all on the same page  then! We'll move forward down this route. Thanks for taking a look."	1	1
+Not pretty.	-1	-1
+From what i can see on the system the libpthread is in /usr/lib and in /usr/lib64 and both of those paths are in my library config.	0	0
+"I don't think this is a bug. CachedSqlEntityProcessor will execute the query only once and that is its USP. If you don't want the caching  then just use SqlEntityProcessor."	-1	0
+Closing issue; Oozie 3.3.2 is released	0	0
+3.1.0-incubating released!	0	0
+"Grumble  grumble..."	0	-1
+"The patch is in: https://git-wip-us.apache.org/repos/asf?p=sqoop.git;a=commit;h=3865f7deec722948a60cc1746e2330bd1c5cb9e4  Thank you Vasanth!  Jarcec"	1	1
+Thanks	1	1
+"Sorry  I tought I could commit this patch but I did not realize that one of the files is in the framework (and I have not access to it). "	-1	-1
+"Patch 003 for removing the getPlatformPath code was applied at repo revision r818803. "	0	0
+"It is a nasty bug that I've seen in real life  though."	-1	-1
+Bug in existing testDelegationTokenRestoredOnRMrestart().	0	-1
+yes	0	0
+"siying  can you rebase this patch? thanks!"	1	1
+"Thanks  Tom"	1	1
+Committed. Thanks Yongqiang	1	1
+"fixed in trunk... thanks Henri!"	1	1
+"Daryn  the current patch looks good."	1	1
+zoo_multi and zoo_amulti crash for the same reason.  Made some local fixes here.	0	0
+"Sorry for the delay  I'm recreating the mirror now."	-1	-1
+Gav...(Hoping I'm not teaching you how to suck eggs :) )	-1	-1
+"(back from holidays  so a bit delayed  but) I confirm Andrzej's suggestion -- a plain-text only summarized is ideal for clustering for example."	0	-1
+"Make patch against the latest trunk  and add the comment suggested by Bikas."	0	0
+"This seems good to me. +1 to apply it"	1	1
+Would you post saxon error message?	0	0
+"Cool feature!  Performance: - It looks like scripts are read from the resource loader and parsed again (eval) for every update request."	1	1
+"bq. I'm gonna hold off on LUCENE-2771 until we figure this one out... because it would make your getSequentialSubReaders in the synced=true case quite heavy (without modifications).  Sorry, I was wrong on this... I totally forgot the norms cache is lazy-loaded always in that patch. I'll commit LUCENE-2771 it shouldnt affect this!"	-1	-1
+"Sorry Alvaro   lot of things need to be done at the same time.  But I am still not 100% clear what you want me to do / change.  I put installation/wiki links on top-right now: http://incubator.apache.org/openmeetings/index.html  What about the links to the Tutorials, you want to put those in the section ""Installation and Upgrade"" right?  Sebastian"	-1	-1
+Missed 2 new files - sorry !	-1	-1
+"T5 requires Java 1.5+ "	0	0
+I disagree... and I guess I'm willing to go to bat for this.	-1	-1
+Ok I'll add these.	1	0
+"Why the hell do they deliver Duration  if they cannot instantiate it :-/"	-1	-1
+Committed to trunk. Thanks Johnny!	1	1
+"I am sorry if you think this is nit picking but the logged error still refers to plugins.xml but it should not:  {code} LOG.e(TAG, ""ERROR: config.xml is missing.  Add res/xml/plugins.xml to your project.""); {code}"	-1	-1
+fix also applied to the Native SDO repo on revision 671633	0	0
+"Fixed at r504842  thanks!"	1	1
+"John: first off  i want to apologize for the *extremely* belated patch review ... I know i told you i'd try to look at this months ago  but ... yeah ... life tends to get in the way of patches.  on the whole, things seem pretty good -- although you were still using an interface instead of an abstract class.  Having the main API for a type of plugin be an abstract class is an important mechanism to help future proof ourselves against possible additions we want to make the the plugin API in the future; if it's an interface we can't really change it once it's released (because we might break people Impls); if it's an abstract class, we can always provide a default impl for people.  the biggest concern i have about this patch at the moment is that there are no tests, and no example configs, so it's hard to be sure it's even working at all :)  here's what i see as the current todo list for this issue...  1) there are some legacy SolrIndexSearcher constructors that need to delegate to the SolrCore to get indexReaderFactory ... perhaps we should have a helper method that decides which SolrIndexConfig to use based on the ""name"" ? 2) we need tests showing custom IndexReaderFactory getting used (even if it's just a mock IndexReaderFactory thatsets a boolean to show it's being used) ... this will also serve as a test that config syntax works. 3) need commented out example of using a custom indexReaderFactory in example/solr/conf/solrconfig.xml 4) sanity check this against SOLR-465, make sure we aren't painting ourselves into a corner. 5) we should make IndexReaderFactory use the AbstractPluginLoader stuff and remove the guts of SolrIndexConfig.loadIndexReaderFactory.  It looks like we'll need to add a ""single item"" version of load to the AbstractPluginLoader to make that work well.  #5 is something that can be done after this is committed, but 1-4 are pretty important.  If you can update the patch with some configs/tests i'll think about the legacy SolrIndexSearcher constructors and try to figure out a good solution for them "	0	1
+"+1  I committed this. Thanks, Kay Kay!"	1	1
+"Sorry to close this David  but the Messenger component headed over to codehaus where I think it's pretty much dead."	-1	-1
+" I used to be the latter  but then I went to law school and got a degree in this shit. "	-1	-1
+"Shit  there is an dependency. Please go to Preferences -> LDAP -> Entry Editor and enable the option ""Show operational attributes""."	0	-1
+"Thanks for the revision  Jørgen! I think the release notes look good now. I will resolve the issue after a few days, to allow for any feedback on Knut's suggestion. "	1	1
+"Oh  my stupid:)"	-1	-1
+"Otis  You need to grab the 'zipped' version aka solr-215.patch.zip (since June 23). I was trying to be space & bandwidth friendly... Sorry I did not make it more obvious in some previous comments. Henri"	-1	-1
+commit the patch to trunk. thanks sameera.	1	1
+"[~shreepadma] thank you for working on it.  Do you have plan when you submit a patch? I know it takes efforts to code and test in 4 different types of databases.  Would you please release mysql version first? Then file a jira to follow up Postgres/Oracle/Derby. Just a suggestion for fast release but up to you to decide.  thanks a lot again Tim"	1	1
+"Sorry for the super-slow uptake on this  the new job is using up all of my limited brain resources. "	-1	-1
+Patch attached.	0	0
+"Running tests on this. Will commit once it is done. Sorry  this one fell off my radar..."	-1	-1
+"Closing issues which have been released. "	0	0
+"This issue was ruled a Flash Player issue all the way back in 2009 (by Adobe). It is not an Apache Flex bug  so we can't fix it."	0	0
+"+1 I just committed this to branch 0.22.1. Thank you Benoy."	1	1
+"Looks good to me. Works for me   too. :-) "	1	1
+"Please forget last comment  it is incorrect."	-1	-1
+Re font size: sounds reasonable. Thanks.	1	1
+That would suck.	-1	-1
+sorry.	-1	-1
+"Hmm  that sucks."	-1	-1
+"Ah  damn  I thought it was fixed :/  Guillaume ?"	-1	-1
+"applied in revision 411104 Paulex, please verify it resolves the issue"	0	0
+I've just committed this.  Thanks Arun!	1	1
+I've gotten to the bottom of this - patch attached.	0	0
+"1. My feeling is that ""if (file.lastModified() < now + ACCESS_TIME_RESOLUTION)"" is not necessary  since the lastModified value will already be truncated to the system resolution  but I do not think it is harmful.  2. I chose to throw exception only if file.canWrite, because I was trying to minimise the impact of the change. It's not clear to me whether setLastModified might work when !file.canWrite. However, it certainly must work (because of GC) if file.canWrite. I would consider moving the canWrite test outside of the setLastModified call, similar to getRecordIfStored, it just wasn't necessary to fix the immediate problem.  3. Well, not swallowed exactly, but caught and converted to failure return code (-1) e.g. see BLOBInDataStore.getSize. In any case, the javadoc for Property.getLength/getLengths documents -1 as a possible ""failure"" return code, so it had to be tested. I think if Property.getLength/getLengths throws an exception, that is already correctly handled.  Thanks for the quick response.  "	0	1
+"I just committed this  thanks Ari."	1	1
+"Ah  too bad."	-1	-1
+"Sorry I didn't use your patch  but I think you'll like the end result."	-1	-1
+"Oh fuck :-) Sorry. Not my day  more beer needed!"	-1	-1
+"The diffs look good to me  but it sounds like this only solves part of hte problems  so we should probably file another bug to get the mgmt GUI 100% functional (for 2.1 maybe?)."	1	1
+"I'm sorry Mark   I came back here to remove my comment as after building the app from scratch I have found that by default it used WhenExhaustedAction = GROW and not BLOCK!"	-1	-1
++1 for 0.95. Thanks.	1	1
+"It was looking good for jackrabbit  for modeshape there is one more tweak required"	1	0
+Thanks Mark for taking care of this issue!	1	1
+"Sorry for my poor review  didn't notice try/catch :("	-1	-1
+"I agree  that's a good idea."	1	1
+"Attached the patch  which addresses the issue in EntryLogger."	0	0
+released with OWB-1.1.4	0	0
+Nevermind.  I believe someone has already addressed it in CAMEL-4294.  I have linked the issue here.	0	0
+I just committed this. Thanks Patrick!	1	1
+Sorry about that.	-1	-1
+I should have been very careful before doing this.	-1	-1
+I have a really bad habit of not reading thru all the bug comments before asking questions.	-1	-1
+@Ashutosh: thanks a lot for the comments.	1	1
+It worked fine in Jetspeed 2.2.0 too	1	0
+"Thanks for volunteering for this  Prashanth!"	1	1
+"We'll get it fixed soon  sorry for the inconvenience. I just wanted to point you (and others who may land here) to alternative resources meanwhile :)"	-1	-1
++1 the patch looks good.	1	1
+Sorry for the hassle.	-1	-1
+[~sershe] sorry for late reply. I upload the patch to https://reviews.facebook.net/D13341. Could you help to review it ? thx.	-1	-1
+"committed revision r580334  regression test added."	0	0
+"Hey Tom   The change in your patch looks good. Latest patch just updates two tests. I'll commit this if Hudson comes back OK.  Thanks, Eli"	1	1
+"Also  {noformat} +        NetUtils.getDefaultSocketFactory(conf), +        org.apache.hadoop.ipc.Client.getTimeout(conf), defaultPolicy).getProxy();{noformat} indentation is wrong in the second line"	0	0
+"Hey Vikram-- sorry about that  I haven't paid much attention to this issue."	-1	-1
+Thanks Jimmy.	1	1
+yup sorry just fixed.	-1	-1
+"Thanks  Alexei!"	1	1
+"Cool  will do!  Thanks for the review and good questions... and the whole idea! :)"	1	1
+"Here are 2 patches ... one for adjustExamplePaths.bat & .sh and the other a new file holding 2 User Libraries ... UIMA_LIB & UIMA_AS_LIB Not sure where this should go ..."	0	-1
+"This patch just removes the lines of code that send the second NEWLEADER quorum packet. The first packet is sent with: leaderLastZxid = leader.startForwarding(this, updates); a few lines above."	0	0
+"Hi Chris   Thanks for your detailed response.  Thanks,"	1	1
+"Committed revision 1480515. Committed revision 1480517. "	0	0
+Wow!	1	1
+great idea	1	1
+Committed to trunk. Thanks Edward.	1	1
+Pull it back in if you think different.	-1	-1
+"Ignore comment.  "	-1	-1
+"Uwe  can't you use ExtendedFieldCache.getLongs  passing in your own LongParser?"	0	0
+Committed to sqoop2. Thanks Jarcec!	1	1
+"+1 looks good.  Once it is committed  I will deploy it.  Thanks Sourygna."	1	1
+"Hi Bilgin   you are right the entitymode.xml can be removed but I when I add it I'm thinking to add a new filed to PosTerminalInternTx  entity to store ""Pos Paid Reason"" instead of store it in the reasonComment field. I have already created some enumeration into DemoPosData.xml but it is still not been used. There are still a lot of things that has been not implemented or not working so contribution from other people are welcome. Removing the hardcoded value pos-1 into WebPosEvents.java at line 77 is something still to be done. I'm thinking to add a combo box after logged in to choose the posTerminalId but I didn't get the time to do it.  Thanks Marco"	1	1
+"{quote} I don't think it makes sense to argue about who the exception messages are for [...] {quote}  I think the opposite, because it has an impact on the library design. Not that CM cannot go on with the current way; but my point is that Luc and you are focusing on top-level users while stressing that CM in a low-level component. To me, that is a blatant contradiction that produces drawbacks which I presented in several usage examples (which you didn't address), while you always reply with a single use case where the user is yourself (i.e. a CM developer). Anyone else who is using a high-level application based on CM will be baffled by the ""detailed exception message"" because, in all but the most trivial case, his actions will have only a remote connection to the exception triggered by CM. I'm pinpointing at a minute detail of the design of CM, explaining that it can come in the way of some direct users of CM. The current long list of errors is in fact imposing your view (of what is important) to future application developers. [As an example, let's say that someone wants to create a GUI (e.g. for the statistician referred to above), he will want to define his own detailed error messages to be displayed in the GUI with a formatting of his choice. The statistician will never see the messages created by CM.] If a CM exception (resulting from a precondition violation) reaches the end-user level, it means there was some unanticipated problem in the call chain. And to correct it, one would need more than just the ""detailed message"": the end-user will pass the stack trace to the application developer, who will correct a possible bug in his code (such as a missing check of a precondition) or pass it on the the CM developers. "	0	0
+"Hi Charles  thanks for the confirmation... We will chat with Willem  I'm off today but will work for a couple of days this week... Sergey  "	1	1
+"[~lhofhansl]  thank you so much."	1	1
+"Created an attachment (id=17581) Patch for build.xml to add index=""true"" for jar tasks "	0	0
+OK understood. Can you re-create the patch? It's out of sync with head at the moment.	0	0
+Fixed in SVN.  Will let Vincenzo close it if he is satisfied.	0	0
++1 looks good.	1	1
+Weird.	-1	-1
+Replaced patch with fix to catch more bad variables	-1	-1
+"BTW: This is one reason why I hate this autoboxing shit since Java 5. I would love to have a way to prevent it in code (forbidden checks should detect this somehow). "	-1	-1
+" Forget the patch for the moment."	0	-1
+Must be: size >= 0!	0	-1
+Thank you for the patch Sergey.	1	1
+"Never mind  figured it out  will be committing patch in the next few days."	0	0
+"okay  I'm convinced.  Sorry about the wait.  As an apology I have coded up the URL-based version in v3.  (Haven't actually tested it on non-local files though, but it compiles. :)"	-1	-1
++1. Code looks good.	1	1
+"Thanks a lot for the review  Todd.  The test failure is unrelated and is already tracked by another JIRA. I'm going to commit this momentarily."	1	1
+Thanks!	1	1
+A patch file is attached here to address these problems. Many files have been touched. Sorry for it. But I'm sure there are more files than these that have i18n problems. I'd like to dig more into it as soon as these critical ones are resolved.	0	0
+Sorry for the noise.	-1	-1
+@Lars I don't think it would be all that different. I'll take a crack next week (after dealing with the next round of HBASE-6055 stuff).	0	0
+"The attached patch  combined with an `svn rm drivers/' should be enough to call this a Done Deal."	0	0
+Thanks Robert. Committed to trunk.	1	1
+I meet the same problem on Eclipse recently but haven't figured out how to get through.	-1	-1
+Thanks Tony.	1	1
+"+1 for the patch  pending successful Jenkins run for the latest version.  The changes look good.  I verified on both Mac and Windows.  Thanks for addressing this  Andrey!  I'll commit this after Jenkins responds with +1 for the latest version."	1	1
+"But  even if it wasn't it would be totally worthless where it is at."	-1	-1
+"Patch committed to trunk and 0.11 branch.  Zhijie  thanks for the patch!"	1	1
+"Committed to branch and trunk  thanks Gab!"	1	1
+Committed a few days ago.	0	0
+"Henry  you do need an instance of QCM to get the listener  but you don't need the listener because you're using LE.  I'm uploading a patch in which I have commented out some lines of the new test you wrote. This is how I think it should look like. If you agree, please remove those lines and submit a new patch.  Note that I have also changed the leader election parameter in the new instance of QuorumPeer in mockServer to 0."	0	0
+"Committed to trunk. Thanks  Prasanth!"	1	1
+"Some tests I did with a modified PE. I ran the PE with a number from 10 to 3000 and incremented by 10. The garbage collector was called after each run. Here are the results:  {quote} 08/09/17 16:48:54 INFO hbase.ManyPerformanceEvaluation: 10 42725 08/09/17 16:49:31 INFO hbase.ManyPerformanceEvaluation: 20 36744 08/09/17 16:50:06 INFO hbase.ManyPerformanceEvaluation: 30 34928 08/09/17 16:50:40 INFO hbase.ManyPerformanceEvaluation: 40 34150 08/09/17 16:51:14 INFO hbase.ManyPerformanceEvaluation: 50 33664 08/09/17 16:51:47 INFO hbase.ManyPerformanceEvaluation: 60 33570 08/09/17 16:52:21 INFO hbase.ManyPerformanceEvaluation: 70 33142 08/09/17 16:52:54 INFO hbase.ManyPerformanceEvaluation: 80 32901 08/09/17 16:53:26 INFO hbase.ManyPerformanceEvaluation: 90 32864 08/09/17 16:53:59 INFO hbase.ManyPerformanceEvaluation: 100 32776 08/09/17 16:54:32 INFO hbase.ManyPerformanceEvaluation: 110 32725 08/09/17 16:55:05 INFO hbase.ManyPerformanceEvaluation: 120 32747 08/09/17 16:55:38 INFO hbase.ManyPerformanceEvaluation: 130 32698 08/09/17 16:56:10 INFO hbase.ManyPerformanceEvaluation: 140 32693 08/09/17 16:56:43 INFO hbase.ManyPerformanceEvaluation: 150 32643 08/09/17 16:57:16 INFO hbase.ManyPerformanceEvaluation: 160 32686 08/09/17 16:57:48 INFO hbase.ManyPerformanceEvaluation: 170 32665 08/09/17 16:58:21 INFO hbase.ManyPerformanceEvaluation: 180 32448 08/09/17 16:58:53 INFO hbase.ManyPerformanceEvaluation: 190 32004 08/09/17 16:59:25 INFO hbase.ManyPerformanceEvaluation: 200 31985 08/09/17 16:59:57 INFO hbase.ManyPerformanceEvaluation: 210 31964 08/09/17 17:00:29 INFO hbase.ManyPerformanceEvaluation: 220 31983 08/09/17 17:01:01 INFO hbase.ManyPerformanceEvaluation: 230 31778 08/09/17 17:01:32 INFO hbase.ManyPerformanceEvaluation: 240 31766 08/09/17 17:02:04 INFO hbase.ManyPerformanceEvaluation: 250 31886 08/09/17 17:02:36 INFO hbase.ManyPerformanceEvaluation: 260 31773 08/09/17 17:03:08 INFO hbase.ManyPerformanceEvaluation: 270 31709 08/09/17 17:03:40 INFO hbase.ManyPerformanceEvaluation: 280 31669 08/09/17 17:04:11 INFO hbase.ManyPerformanceEvaluation: 290 31647 08/09/17 17:04:43 INFO hbase.ManyPerformanceEvaluation: 300 31634 08/09/17 17:05:15 INFO hbase.ManyPerformanceEvaluation: 310 31674 08/09/17 17:05:47 INFO hbase.ManyPerformanceEvaluation: 320 31935 08/09/17 17:06:18 INFO hbase.ManyPerformanceEvaluation: 330 31802 08/09/17 17:06:50 INFO hbase.ManyPerformanceEvaluation: 340 31571 08/09/17 17:07:21 INFO hbase.ManyPerformanceEvaluation: 350 31484 08/09/17 17:07:53 INFO hbase.ManyPerformanceEvaluation: 360 31713 08/09/17 17:08:25 INFO hbase.ManyPerformanceEvaluation: 370 31512 08/09/17 17:08:56 INFO hbase.ManyPerformanceEvaluation: 380 31456 08/09/17 17:09:28 INFO hbase.ManyPerformanceEvaluation: 390 32055 08/09/17 17:10:01 INFO hbase.ManyPerformanceEvaluation: 400 32260 08/09/17 17:10:33 INFO hbase.ManyPerformanceEvaluation: 410 32167 08/09/17 17:11:05 INFO hbase.ManyPerformanceEvaluation: 420 31962 08/09/17 17:11:37 INFO hbase.ManyPerformanceEvaluation: 430 32003 08/09/17 17:12:09 INFO hbase.ManyPerformanceEvaluation: 440 32054 08/09/17 17:12:41 INFO hbase.ManyPerformanceEvaluation: 450 32105 08/09/17 17:13:13 INFO hbase.ManyPerformanceEvaluation: 460 32126 08/09/17 17:13:45 INFO hbase.ManyPerformanceEvaluation: 470 31961 08/09/17 17:14:17 INFO hbase.ManyPerformanceEvaluation: 480 31968 ... {quote}  It seems that 2000 was an overkill. The gain is impressive between 1 and 10 then around 300 we pretty much reduced the RPC call at it's smallest value."	0	0
+"+1 The patch looks good to me. I will commit this later."	1	1
+Committed revision 1165174.	0	0
+Changes committed with revision: d3a9688d00bd520dc1c9b3a40b229aa9b10c87f0	0	0
+Yes exactly -- sorry to be so unclear. Just really wondering/hoping you'd be interested in working on these ?? I'd like to get them cleaned up because there are now so many that other more important and/or meaningful warnings are likely to be ignored.	-1	-1
+Awesome - thanks so much for the submission Scott!	1	1
+"Sorry for the patch error. I have created a patch both for 562 and 564,and attached it in 564. "	-1	-1
+Yes 70x indicates something amiss.	0	0
+The rest are *totally* unrelated.	-1	-1
+duplicate of FLUME-1475	0	0
+Sorry for the missing class src/java/org/apache/jdo/tck/lifecycle/StateTransitionsReturnedObjects.java.	-1	-1
+"I've just committed this. Thanks Espen  Andrzej  and Owen!"	1	1
+Thanks for reviewing Suresh. Committed to trunk.	1	1
+"Yes  it works ok now  thanks."	1	1
+see also SOLR-2399 -- this has done some great work revamping the admin UI	1	0
+"Attaching a new patch that compiles without errors against JDK1.4.2.  It also accounts for the customizable port part (DERBY-4217), which the previous patch didn't."	0	0
+"This is something that some people have asked for since my CNET days...  I thought there was already an open issue for this  but I can't seem to find it (so I guess not!)"	-1	0
+"AfterDeploymentValidation#addDeploymentProblem failed. since we have DELTASPIKE-262, we should just enable it again for v0.4."	0	0
+"What the hell  I'll give this a shot."	-1	-1
+"Hi   Thanks! Too be honest, I haven't looked at noop much. It was just used in the original patch. I'look at your updated patch and see what more work needs to be done. "	1	1
+"Committed  thanks Jiayan!"	1	1
+"Shit  there is an dependency. Please go to Preferences -> LDAP -> Entry Editor and enable the option ""Show operational attributes""."	0	-1
+huh ... i thought i did resolve this.	-1	-1
++1 Looks good.	1	1
+"Sorry   fixed."	-1	-1
+"JB  do you expect problems when we upgrade Camel 2.10.0 to Spring 3.1.0 (and deploy it into Karaf 2.2.x)? Because Camel leverage on the Karaf Spring feature, it will use Spring 3.0.x when running inside Karaf 3.0x and Spring 3.1.x when running in Karaf 3.0.x.  IMO, when we can upgrade to Spring 3.1.0 without any modification, it should not a problem..."	0	0
+"On 2008/Apr/08 04:09 pm Brian Minchau wrote: > > Hi Helge. > > I'm afraid you can't assign someone to review.  However I will have a look > at your patch.  Any progress in reviewing my patch?  -- Helge Schulz - http://OpenSHORE.org"	-1	0
+"committed as 1307725. thanks for Ivan's improvement  thanks Flavio for reviewing."	1	1
+"Hi Oliver   Thanks for catching this problem and for your suggested fix. We can go one step in simplifying the fix by removing the need for URI altogether if we use the getResourceAsStream() method of ClassLoader rather than getResource(). Modified version of your fix committed in revision 405036. Please could you check that this version of your fix works in your environment.  Best regards, George  "	1	1
+"No  this was on 3.3.3 (sorry  I should have mentioned that before).  That's great to know  thanks!"	1	1
+"Thanks for the new patch  Kristian! The changes look good to me. +1 to commit.  A tiny nit in StatementPoolingTest; the code below could be expressed with an assertEquals now that there's only one condition:  if (!simpleName.equals(expectedName)) { -            if (!simpleName.equals(expectedName + ""40"")) { -                fail(""Expected class name "" + expectedName + "" or "" + -                        expectedName + ""40, got "" + simpleName); -            } +            fail(""Expected class name "" + expectedName + "", got "" + +                    simpleName); }"	1	1
+"There is no mxmlc.exe in the 4.10 release only mxml (for OSX and Linux) and mxml.bat (for windows). How did you install 4.10? "	0	0
+"This patch removes tohtml.xsl and adds configuration_to_docbook_section.xsl.  The latter generates a docbook section from our hbase-default.xml using maven-xml-plugin that runs before the docbook plugin.  Our book then xincludes the generated file (the patch includes this modification too).  Patch includes a edit of our book which adds a preface, an index, an appendix that talks of configuarion, another on compression, etc. "	0	0
+"Of course  StrFieldSource is a private class  No it's not."	-1	-1
+"Hi.  The code above is a copy of the CharsetUtil class just run within a Junit Test case.  There is no exception other than junit.framework.AssertionFailedError.  Are you able to reproduce the error?  Thanks  Richard"	1	1
+the mirror.facebook.com/hive site was already taken offlne.	0	0
+Junit patch committed Revision: 634284 - Thanks John.	1	1
+This was taken care of already.	-1	0
+"I apologize for taking so long to get to reviewing this.  This has some good elements but also quite a few problems.  Here are a few suggestions.  1. The bindingGBeans do not need to know the name of the gbean they are getting something to bind into jndi from, they need a reference to it.  Similarly they do not need to bind a naming Reference, they can bind the object itself.  For instance, the connector binding gbean can do something like this:  private final ManagedConnectionFactoryWrapper managedConnectionFactoryWrapper; // this is the reference to the gbean that gives us the connection factory to bind  ...  //now it's time to bind the connection factory  Object connectionFactory = managedConnectionFactoryWrapper.$getResource(); globalContext.bind(jndiName, connectionFactory);  This is also going to affect how the builders set up the binding gbeans: they know the name of the appropriate gbean such as managedConnectionFactoryWrapper, since they just created it, so they need to use that name to set the reference pattern in the binding gbean.  The binding gbean will then get (a proxy to) the ""real"" gbean that it can use as outlined above.  2. I don't see an implementation of a writable thread safe jndi Context, as dain pointed out you would need.  3. The zip file consists almost entirely of irrelevant files and the actual source files do not all appear to be in the geronimo project structure.  This makes it extremely hard to figure out what to look at.  4. Some of the code modifications (such as to ServiceConfigBuilder) appear to be test cases rather than production code.  It will be a lot easier to evaluate your work if you keep test cases and production code clearly separated as is done in typical maven projects.  5. I think you will need to redo the openejb work after dain's reintegration of his container rewrite.  Thanks!  Let us know if you have any questions about this."	0	1
++1 Committed. Thanks Suresh	1	1
+Thanks Hari!	1	1
+"Same attachement with ASF grant this time (forgot to check the first time  sorry)"	-1	-1
+Inserting timestamps automagically would be bad because it would limit a whole swath of use cases.	-1	-1
+Committed revision 1068985	0	0
+"Thanks for double-checking the fix  Knut. I am thinking of merging the fix into 10.3 tomorrow just to make sure that tests run fine on the tinderbox. All the tests ran fine on my machine."	1	1
+"bq. Can we just make it final when we backport this change?  Duh no we can't since we have core IR impls subclassing IR..."	-1	0
+"Committed revision 728746.  Thanks Shai!"	1	1
+"Oleg  A minor comment.. I don't see why the close() method would throw an IOException..  thanks asankha"	1	1
+Committed. Thanks Robert!	1	1
+"The ASF is going to get the document signed this week  will keep you posted."	0	0
+Bringing this in the latest 0.89	0	0
+"I have committed this.  Thanks  Aaron!"	1	1
+thanks henry!	1	1
+"First sorry for the delay. It looks like this patch slipped through.  I tried to apply it, but there are a bunch of conflicts (some of them are related to recent docstring format changes and other seem to be related to other changes).  Can you please re-generate the patch against the latest trunk?  Thanks!"	-1	1
+You misunderstood the response: StopFilter indeed did not change.	0	-1
+"I just committed this. thanks flavio.  "	1	1
+"+1 as well.  Patch looks good  like the javadoc  we get lots of users asking what those exceptions mean."	1	1
+"Thanks for figuring this one out and providing the patch  Jamie!"	1	1
+Awesome - great stuff Maria.  Thanks!	1	1
+"I just glanced through in general: this is similar to the hack patch i used exploring LUCENE-4089  though I just used a Map<String String>.  The part i didnt like when exploring was more related to how term index/term dictionary are separated: {quote} divisor: generalize this into something simple like a Map<String,String> of codec ""parameters"" that you set on IWC/IR. split divisor from ""don't load terms index"". define these as constants where they belong. I got unhappy here in the ""splitting"" part because I wanted the divisor part in TermsIndexReaderBase, but that doesnt extend FieldsProducer (where i wanted the ""don't load"" part) and wrap the terms dict, instead its backwards and terms dict wraps the TermsIndexReaderBase... maybe we should fix that too? I think this confusing the way it is but I didnt look at how difficult this would be. {quote}  But I think maybe I was trying to tackle too much at once... still as an ""untyped"" parameter I thought it would be useful to fix the semantics all in one break rather than causing confusion down the road. "	0	0
+"Sorry  grabbed the wrong ticket."	-1	-1
+"Best regards   Andrew"	1	1
+Sorry everyone.	-1	-1
+Thanks to Fabrizio for the patch.	1	1
+"Hey  you're right  that idea was probably not the best approach to the problem - 0.6 looks really nice  looking forward to it :)"	1	1
+"s/[~apurtell]/[~lhofhansl]/  Sorry guys."	-1	-1
+"cool stuff! a good candidate to put on myfaces-commons-utils  so the user can just add the resource handler on its webapp faces-config."	1	1
+That's weird.	-1	-1
+Thanks to Mathias Werlitz - sorry for the delay.	-1	-1
+Completely missed issue 614..	0	-1
+Thanks Andrew - the patch was applied to SQL module at r525019.	1	1
+Thanks for the review jimmy.  committed to trunk.	1	1
+"Yes  I just tried it and this change works when the user's classpath variable is unset.  I've just committed this. Thanks Michael!"	1	1
+I'm an idiot.	-1	-1
+Sorry for letting you guys wait.	-1	-1
+"My bad  I screwed up the assertion -> RuntimeException transition."	-1	-1
+"That's great.  Thanks  Junping.  Then  I will first commit HADOOP-8820.b1.002.patch.  For the additional bug fixes  let's create a new JIRA since we also need to fix the code in trunk. "	1	1
+"I have committed the patch for trunk.  Thanks  Tanping!"	1	1
+Committed revision 777662.	0	0
+"Committed to trunk. Thanks  Sushanth!"	1	1
+Committed to trunk with revision 429550.	0	0
+Code looks cool.	1	1
+"Sorry for a mess in uploaded files  my connection got broken during first upload."	-1	-1
+"Thank you very much  Richard."	1	1
+"Any feedback on the updated patch?  I'm guessing it won't cleanly apply to trunk anymore since it's been two weeks  but if the general idea looks correct  I can update it to apply cleanly to the current trunk."	0	0
+"Hi Ivan   Thanks a lot for the patch. Few comments.  1)  Patch does not apply cleanly. many Hunk failure while applying patch.  {noformat} Hunk #13 FAILED at 264. Hunk #14 FAILED at 281. Hunk #15 FAILED at 293. Hunk #16 FAILED at 309. Hunk #17 FAILED at 332. Hunk #18 FAILED at 345. Hunk #19 FAILED at 362. Hunk #20 FAILED at 372. Hunk #21 FAILED at 395. {noformat}  Could you please regenerate on the correct trunk code base?  2) TestBookKeeperHACheckpoints.java:  {code} conf.set(DFSConfigKeys.DFS_NAMENODE_SHARED_EDITS_DIR_KEY, +             BKJMUtil.createJournalURI(""/checkpointing"" + journalCount++) +             .toString()); +    BKJMUtil.addJournalManagerDefinition(conf); {code}  I can see setUpCluster code almost duplicates with TestStandbyCheckpoints. How about extracting configuration setup alone to protected method in TestStandbyCheckpoints and override in TestBookKeeperHACheckpoints. Set the above configurations and give the call to super.  3) {code} + +  @AfterClass +  public static void shutdownBK() throws Exception { +    bkutil.teardown(); +  } {code} Could you please add null condition for bkutil? also correct the bkutil->bkUtil  Not completed nmy review, will continue review... "	0	1
+Applied patch with thanks to Chris.	1	1
+"# In DataStorage.linkAllBlocks() you commented our the {{toDir.mkdir()}} part. You probably wanted to remove it. # I would avoid all spelling, formatting, commenting, empty line changes, because they will make merging hard. # Don't think introducing {{FINALIZED_DIR_NAME}} in {{MiniDFSCluster}} is a good idea. It is better than what we have now - a plain string {{current}}. {{DataStorage}} is a public class, we should rather add a public static method to it {{getFinalizedDirectoryName()}}. Then ""finalized"" will defined only in one place."	0	0
+Thanks Ashish!	1	1
+Committed revision 1070501.	0	0
+"Guillaume   I took a quick look at your suggestions.  I agree that we can reduce the code a bit.  However, I think that we need to keep the activate method as it initializes the servingXml internals.   I'm not sure about the deactivate method.  I also noticed that you have added a patch, but, being new to jira, I'm not sure if that means that you've made changes to my attachment or something else.  Are you still looking for me to correct the formatting and to remove the extraneous methods/classes?  Thanks, James"	1	1
+Why the hell is this not a bug?	-1	-1
+Attached image showing blip padding in the Google Wave client.	0	0
+I've just committed this. Thanks Eli!	1	1
+Sorry about the report.	-1	-1
+Thanks for the work Haohui! I've committed it to branch-1.	1	1
+"Sorry looks like we took to long to get to this  the patch no longer applies.  Can you please upmerge to latest?"	-1	-1
+Tests no longer sleep	0	-1
+I found the (sad) attempt at a script you asked about and uploaded it to MAPREDUCE-4282.	0	-1
+"Created an attachment (id=3493) Patch to validator-rules.xml for bug "	0	0
+"Hmm  not quite. Added this above entry to my web.xml  but I'm unable to load the jdbc driver, oracle.jdbc.driver.OracleDriver. What's weird is that this class is in Cocoon's normal classpath. How do I specify the classpath? Once I get this answered (either here or in cocoon-users which I've also asked), I'll close the bug. "	0	0
+"LGTM  +1  (and I think I'm sufficiently convinced that it's OK for 0.7.1 as well).  I think tjake was planning to commit this, so I'll leave it here for the time being, until he has a chance to look it over.  Thanks Stephen."	1	1
+Added patch generated from CXF 2.2.6	0	0
+"Sorry about the noise  was trying out the precommit job."	-1	-1
+"Kishan  If this is already merged  can you change status to resolved??"	0	0
+That's a very promising idea !	1	1
+Sorry.	-1	-1
+"Hi Thiwanka   I assume you're referring to this code which checks the character offset and produces progress events if the XMLLocator has advanced at least 2K:  public void startElement (QName element, XMLAttributes attributes, Augmentations augs) throws XNIException { if(locator.getCharacterOffset() == 0) { reportProgressEvents(); nextCharOffset += 2048; }else if(locator.getCharacterOffset() > nextCharOffset) { reportProgressEvents(); nextCharOffset += 2048; }  //Call the AbstractDOMParser.startElement() super.startElement(element, attributes, augs); }  That looks fine to me.  Just mentioned this to Ishara... In future it would be easier to review changes if you created a patch (e.g. diff -u) which shows the differences between the previous version. Generally also better to add source files as an attachment to the JIRA issue rather than including it directly as a comment. This makes it easier to review and apply to the codebase.  Thanks. "	0	1
+"Thanks a lot for fixing those issues  Alejandro. I re-ran all the tests I ran last night and everything worked great.  Additionally, I tried out test-patch.sh, which seemed to work flawlessly.  +1, patch looks good to me."	1	1
+Patch is committed to the trunk. Thanks Niraj.	1	1
+"Hi Simo  sorry for delay. I had a quick check to org.kohsuke.MetaInfServices . It seems to fit all our needs: use the quickest and more standard way to declare plugins in a transparent fashion. I don't have any objection with this patch  for me it is ok. Thanks Mic"	1	-1
+reopened for fixVersion	0	0
+"Sweet  I will review and apply."	1	1
+"All existing documentation/discussion from Moin Moin wiki now copied across to Confluence JIRA and re-formatted as appropriate.  Should now all be updating on Confluence wiki and retire Moin Moin in a couple of weeks when people have been able to check that their pages look ok on Confluence."	0	0
+"Integrated to trunk.  Thanks for the patch, Bryan.  Thanks for the review, Chunhui."	1	1
+Please review the submitted patch. Thanks.	1	1
+Sorry about that.	-1	-1
+The mutateLevel problem looks like what I predicted -- Windows won't let you rename over an existing file.	-1	0
+Committed to TRUNK.  Thanks for the patch Doug.	1	1
+"Sorry again  I tried with the same revision  same language  same theme and I use also FF4 and I still don't reproduce (see screenshot-1)  It would be interesting ot have other persons tests"	-1	-1
+"Some file were missing in the last patch  sorry."	-1	-1
+" ----------------------------------------------------------- This is an automatically generated e-mail. To reply, visit: https://reviews.apache.org/r/3401/#review4382 -----------------------------------------------------------   Looks good. Does it overwhelm the status display in the UI?  - Lars   On 2012-01-06 03:06:26, Andrew Purtell wrote: bq. bq.  ----------------------------------------------------------- bq.  This is an automatically generated e-mail. To reply, visit: bq.  https://reviews.apache.org/r/3401/ bq.  ----------------------------------------------------------- bq. bq.  (Updated 2012-01-06 03:06:26) bq. bq. bq.  Review request for hbase and Michael Stack. bq. bq. bq.  Summary bq.  ------- bq. bq.  Consider exposing master event handler state as monitored tasks. bq. bq. bq.  This addresses bug HBASE-5132. bq.      https://issues.apache.org/jira/browse/HBASE-5132 bq. bq. bq.  Diffs bq.  ----- bq. bq.    src/main/java/org/apache/hadoop/hbase/master/handler/ClosedRegionHandler.java 2dfc3e7 bq.    src/main/java/org/apache/hadoop/hbase/master/handler/DisableTableHandler.java 5af0690 bq.    src/main/java/org/apache/hadoop/hbase/master/handler/EnableTableHandler.java 78bb5bf bq.    src/main/java/org/apache/hadoop/hbase/master/handler/OpenedRegionHandler.java f171a5a bq.    src/main/java/org/apache/hadoop/hbase/master/handler/ServerShutdownHandler.java 2dd497b bq.    src/main/java/org/apache/hadoop/hbase/master/handler/SplitRegionHandler.java 2d544dd bq.    src/main/java/org/apache/hadoop/hbase/master/handler/TableEventHandler.java 76c98b3 bq. bq.  Diff: https://reviews.apache.org/r/3401/diff bq. bq. bq.  Testing bq.  ------- bq. bq.  None yet. bq. bq. bq.  Thanks, bq. bq.  Andrew bq. bq.  "	0	0
+"Patch looks good. +1"	1	1
+"I changed my mind and resolved DIRMINA-82  and therefore we don't need to fix this issue anymore."	0	0
+thanks luis!	1	1
+"I see what you mean; I didn't make the distinction between zero values and missing values.  But I am actually using a PreferenceInferrer that fills in 0 for missing values. When I do that, the break still happens before the other dimensions are included in the calculations of sumX or sumY."	0	0
+"I have this issue  where my server and client is creating a lot of loopback threads  that I believe must be related to this issue."	0	-1
++1 for this: my bad.	-1	-1
+Sorry...	-1	-1
+Thanks [~cnauroth] & [~tomwhite] for the reviews!	1	1
+Sounds like a good idea.	1	1
+"Thanks Imran.  Fixed in LUNI module at repo revision r568966.  Please check it was fixed as you expected. "	1	1
+"Yes  I have been watching OFBIZ-1453 with interest.  I approve of the issue and implementation and didn't have anything to add  so I haven't been involved.  The thing I have been thinking about is that there's some assumptions to be made here for pricing and the type of question.  I.e. multiselect questions should display the absolute price.  I'm also trying to work over some other scenarios.  I'll clean up what I have an submit a patch tomorrow. "	0	0
+Closing all resolved tickets from 2010 or older	0	0
+"You are missing my point  sorry   By 'check in normally' I mean just commit them using 'svn add ...' 'svn commit ..' not 'svn import' you cant do that.  people.apache.org was down for a while, but is now back ,that however is not related as you dont need to access people.apache.org to commit to svn. "	-1	-1
